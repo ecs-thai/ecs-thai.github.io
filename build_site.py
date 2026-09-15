@@ -108,7 +108,7 @@ def home():
     body=f'''<section class="hero"><div class="wrap hero-grid"><div><p class="eyebrow">THE ELECTROCHEMICAL SOCIETY · THAILAND</p><h1>{pair('เชื่อมโยงชุมชนเคมีไฟฟ้าในประเทศไทย','Connecting Thailand’s electrochemistry community')}</h1><p class="lead">{pair('ร่วมแลกเปลี่ยนความรู้ด้านเคมีไฟฟ้าและวิทยาศาสตร์สถานะของแข็ง สนับสนุนนักวิจัยรุ่นใหม่ และสร้างความร่วมมือระหว่างนักวิทยาศาสตร์กับวิศวกร','Sharing electrochemical and solid-state science, supporting early-career researchers, and connecting scientists and engineers.')}</p><div class="actions">{link('about.html','รู้จัก ECS Thailand Section','Discover the Section','button')}{link('meetings.html','เอกสารการประชุม →','Meeting resources →')}</div></div>{visual}</div></section>'''
     if latest:
         body+=f'''<section class="section white"><div class="wrap"><div class="section-header"><div><p class="eyebrow">{pair('ข้อมูลการประชุม','MEETING RESOURCES')}</p><h2>{pair('รวมทุกอย่างสำหรับการประชุม','Everything for your meeting')}</h2></div>{link('meetings.html','คลังการประชุมทั้งหมด →','Browse all meetings →')}</div><div class="feature-grid"><article class="meeting-feature"><span class="badge">{tr(latest['format'])}</span><h3>{tr(latest['title'])}</h3><div class="meta"><p>{date_text(latest['date'])} · {tr(latest['time'])}</p><p>{tr(latest['venue'])}</p></div><p class="summary">{tr(latest['summary'])}</p>{link(meeting_url(latest),'เปิดหน้าการประชุม','Open meeting resources','button')}</article><div class="resource-teaser"><h3>{pair('เอกสารและเครื่องมือ','Documents & tools')}</h3>'''
-        for r in latest['materials'][:2]+latest['materials'][3:4]:
+        for r in latest['materials'][:3]:
             body+=f'<a class="teaser-row" href="{safe_url(r["url"])}"><strong>{tr(r["title"])}<span aria-hidden="true">↗</span></strong><p>{tr(r["detail"])}</p></a>'
         body+='</div></div></div></section>'
     body+=f'<section class="section"><div class="wrap"><div class="section-header"><div><p class="eyebrow">{pair("สิ่งที่เรามุ่งส่งเสริม","OUR PURPOSE")}</p><h2>{pair("ความรู้ ผู้คน และโอกาสในการร่วมงาน","Knowledge, people and collaboration")}</h2></div></div>{pillars()}</div></section>'
@@ -130,7 +130,7 @@ def activities():
 
 
 def archive():
-    body=intro('คลังการประชุม','Meeting archive',{'th':'เลือกการประชุมเพื่อเปิดวาระ สไลด์ เอกสารประกอบ และรายงานการประชุมที่เผยแพร่แล้ว','en':'Find agendas, slides, briefing documents and published minutes for each meeting.'})
+    body=intro('คลังการประชุม','Meeting archive',{'th':'เลือกการประชุมเพื่อเปิดวาระ สไลด์ เอกสารประกอบ และรายงานการประชุมที่เผยแพร่แล้ว','en':'Find agendas, slides and published minutes for each meeting.'})
     body+=f'''<section class="section white"><div class="wrap"><div class="archive-tools"><div class="field"><label for="archive-search">{pair('ค้นหาการประชุม','Find a meeting')}</label><input id="archive-search" type="search" placeholder="ชื่อการประชุมหรือวันที่" data-placeholder-th="ชื่อการประชุมหรือวันที่" data-placeholder-en="Meeting title or date"></div><div class="field narrow"><label for="archive-type">{pair('ประเภทเอกสาร','Documents')}</label><select id="archive-type"><option value="all">ทั้งหมด / All meetings</option><option value="minutes">มีรายงานการประชุม / With minutes</option></select></div></div>'''
     for year in sorted({m['date'][:4] for m in MEETINGS},reverse=True):
         body+=f'<section class="archive-year"><h2>{year}</h2>'
@@ -143,7 +143,7 @@ def archive():
             else: body+=f'<span class="meta">{pair("รายงานการประชุม: ยังไม่เผยแพร่","Minutes: not yet published")}</span>'
             body+='</div></div></article>'
         body+='</section>'
-    body+=f'<div class="empty-state" id="archive-empty" hidden role="status"><p>{pair("ยังไม่มีการประชุมหรือรายงานที่ตรงกับตัวกรองนี้","No meetings or minutes match these filters.")}</p></div><p class="muted-note">{pair("เอกสารประกอบและร่างคำพูดใช้เตรียมการประชุม รายงานการประชุมจะระบุแยกต่างหาก พร้อมสถานะฉบับร่างหรือฉบับรับรอง","Briefing documents and speaking outlines are preparation materials. Minutes are listed separately and identified as draft or approved.")}</p></div></section>'
+    body+=f'<div class="empty-state" id="archive-empty" hidden role="status"><p>{pair("ยังไม่มีการประชุมหรือรายงานที่ตรงกับตัวกรองนี้","No meetings or minutes match these filters.")}</p></div><p class="muted-note">{pair("รายงานการประชุมจะระบุแยกจากเอกสารเตรียมประชุม พร้อมสถานะฉบับร่างหรือฉบับรับรอง","Minutes are listed separately from preparation materials and identified as draft or approved.")}</p></div></section>'
     page('meetings.html','meetings','คลังการประชุม','Meeting archive',body)
 
 

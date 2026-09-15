@@ -14,7 +14,7 @@ A Thai–English website for Section information, activity announcements, meetin
 | คลังการประชุม / Meetings | `/meetings.html` |
 | เข้าร่วม ECS / Join ECS | `/join.html` |
 
-Each meeting has a permanent flat URL: `meeting-{id}.html`. The meeting dated 15 September 2026 uses [meeting-2026-09-15.html](https://ecs-thai.github.io/meeting-2026-09-15.html). Its presentation is [slides-2026-09-15.html](https://ecs-thai.github.io/slides-2026-09-15.html), while the Thai briefing remains at [meeting-notes-th.html](https://ecs-thai.github.io/meeting-notes-th.html).
+Each meeting has a permanent flat URL: `meeting-{id}.html`. The meeting dated 15 September 2026 uses [meeting-2026-09-15.html](https://ecs-thai.github.io/meeting-2026-09-15.html). Its public presentation is [slides-2026-09-15.html](https://ecs-thai.github.io/slides-2026-09-15.html), and its English agenda opens directly on the site at [agenda-2026-09-15.html](https://ecs-thai.github.io/agenda-2026-09-15.html).
 
 The site starts in Thai and offers a TH/EN switch. Meeting and news content needs both `th` and `en` values. The archive supports searching by meeting title or date and filtering for meetings with published minutes, including drafts identified as such.
 
@@ -26,12 +26,13 @@ The site starts in Thai and offers a TH/EN switch. Meeting and news content need
 | `build_site.py` | Builds the five main pages and one detail page per meeting; contains shared page copy and layouts |
 | `site.css`, `site.js` | Site styling, language switching, navigation, archive filtering, and old slide-link compatibility |
 | `slides-2026-09-15.qmd`, `theme.scss`, `head.html` | The 2026 reveal.js presentation and its styling/header |
-| `meeting-notes-th.qmd`, `brief.css` | The 2026 Thai preparation brief |
-| `_quarto.yml` | Explicit presentation/brief render list and Quarto output settings |
+| `agenda-2026-09-15.qmd` | Canonical source for the public English agenda, rendered as `agenda-2026-09-15.html`; edit this file to update the displayed agenda |
+| `agenda.md` | Retained agenda source reference for existing links |
+| `_quarto.yml` | Explicit render list for the presentation and any future public documents, plus Quarto output settings |
 | `vote-demo.html` | Standalone demonstration ballot, using fictional candidates |
 | `meeting-template.json`, `news-template.json` | Inactive examples; copy an edited object into the appropriate `content.json` array to publish it |
 
-Edit the source, then rebuild. Changes made directly to generated main pages, meeting detail pages, slides, or briefing HTML will be overwritten.
+Edit the public source, then rebuild. Changes made directly to generated main pages, meeting detail pages, slides, or document HTML will be overwritten.
 
 ## Build
 
@@ -42,9 +43,9 @@ quarto render
 python3 build_site.py
 ```
 
-Quarto renders only the presentations and briefs listed in `_quarto.yml`, writing them under `published/`. It does **not** build the Section homepage. The Python builder copies referenced local HTML documents from `published/` into the project root, then generates the main pages and meeting detail pages there. Referenced documents include every meeting’s `materials` and `minutes`; reserved website page filenames are excluded from copying.
+Quarto renders only the presentation and public documents listed in `_quarto.yml`, including the English agenda, writing them under `published/`. The agenda is a regular HTML document, while the slides use reveal.js. Quarto does **not** build the Section homepage. The Python builder copies referenced local HTML documents from `published/` into the project root, then generates the main pages and meeting detail pages there. Referenced documents include every meeting’s `materials` and `minutes`; reserved website page filenames are excluded from copying.
 
-When only meeting/news metadata changes, run `python3 build_site.py` once the required document files exist. For a future presentation or brief, add its source to the render list and its HTML filename to the meeting’s `materials`, then run both commands. New referenced HTML is copied automatically. Add PDFs and registration QR images directly to the project root; use a unique `registration_qr` filename for each future event. The builder checks that referenced local documents and registration QR files exist.
+When only meeting/news metadata changes, run `python3 build_site.py` once the required document files exist. For a future public presentation or document, add its public source to the render list and its HTML filename to the meeting’s `materials`, then run both commands. New referenced HTML is copied automatically. Add PDFs and registration QR images directly to the project root; use a unique `registration_qr` filename for each future event. The builder checks that referenced local documents and registration QR files exist.
 
 To preview from the project folder:
 
@@ -66,12 +67,12 @@ Do not upload `published/`, `.quarto/`, caches, logs, the portable Quarto runtim
 - Keep the 2026 presentation’s slide IDs and order to preserve named and numbered reveal links. Bare old `/` links now show the homepage, which links to the meeting.
 - `vote-demo.html` and `voting-demo-qr.png` remain at the root. The QR still opens the demonstration, not a real election.
 - `registration-qr.png` remains the QR for the **15 September 2026 event**. It points directly to that event’s public registration form. Future meetings need a separate event form and must not reuse this QR.
-- Keep `meeting-notes-th.html` and `agenda.md` available for existing links.
+- Keep `agenda.md` available for existing links.
 
 ## Minutes, registration, and public content
 
-Use `"minutes": null` until an actual public minutes file exists. A minutes entry must have `status: "draft"` or `status: "approved"`; use `approved` only after approval has occurred. The Thai speaking outline is preparation material, not minutes. The 2026 meeting has no financial report presented; its third agenda slot provides conditional ECS activity-support information instead.
+Use `"minutes": null` until an actual public minutes file exists. A minutes entry must have `status: "draft"` or `status: "approved"`; use `approved` only after approval has occurred. Minutes should record the actual meeting and its outcomes.
 
 Future meeting registration should use a separate public Notion form for that event, with responses kept privately by the organizer. Registration does not establish attendance, ECS membership, or voting eligibility. Consent to future contact remains optional.
 
-All site files and presentation speaker notes are public. Keep participant lists, private Notion exports, meeting access credentials, voting credentials, and administrator keys out of the repository. The voting preview uses fictional candidates, submits no votes, and clears its in-memory choices on reload.
+Publish only the slides and documents selected for public use. Keep the Chair’s speaking outlines and presenter notes outside the public project and repository, including the Quarto source and generated HTML. Also keep participant lists, private Notion exports, meeting access credentials, voting credentials, and administrator keys out of the repository. The voting preview uses fictional candidates, submits no votes, and clears its in-memory choices on reload.

@@ -1,4 +1,12 @@
-# ECS Thailand Section Annual Meeting 2026
+---
+title: "Meeting Agenda"
+subtitle: "ECS Thailand Section Annual Meeting 2026"
+lang: en
+format:
+  html:
+    toc: false
+output-file: agenda-2026-09-15.html
+---
 
 [Meeting resources](meeting-2026-09-15.html) · [Slides](slides-2026-09-15.html)
 
@@ -49,6 +57,6 @@ The circulated heading is retained. As clarified by the Chair, no financial repo
 
 First name, last name, institution or university, and email are required. Consent to future contact is optional. Registration records remain private.
 
-![Registration QR](registration-qr.png)
+![Registration QR](registration-qr.png){width=220px}
 
 Chair: Prof. Soorathep Kheawhom

@@ -3,7 +3,7 @@ project:
   output-dir: published
   render:
     - slides-2026-09-15.qmd
-    - meeting-notes-th.qmd
+    - agenda-2026-09-15.qmd
 
 format:
   html:

@@ -39,24 +39,11 @@
             "en": "Meeting slides"
           },
           "detail": {
-            "th": "14 หน้า พร้อมบันทึกช่วยพูดภาษาไทย",
-            "en": "14 slides with Thai speaker notes"
+            "th": "สไลด์สำหรับการประชุม 14 หน้า",
+            "en": "14 meeting slides"
           },
           "url": "slides-2026-09-15.html",
           "type": "WEB"
-        },
-        {
-          "kind": "briefing",
-          "title": {
-            "th": "เนื้อหาประกอบทั้ง 7 วาระ",
-            "en": "Agenda briefing & funding guidance"
-          },
-          "detail": {
-            "th": "ร่างคำพูดและวิธีประสานขอเงินสนับสนุน ECS",
-            "en": "Thai speaking outline and sourced ECS funding information"
-          },
-          "url": "meeting-notes-th.html",
-          "type": "TH"
         },
         {
           "kind": "agenda",
@@ -68,7 +55,7 @@
             "th": "วาระเดิม 7 ข้อ พร้อมคำชี้แจงวาระการเงิน",
             "en": "The seven circulated items with the funding-briefing clarification"
           },
-          "url": "https://github.com/ecs-thai/ecs-thai.github.io/blob/main/agenda.md",
+          "url": "agenda-2026-09-15.html",
           "type": "EN"
         },
         {
@@ -103,8 +90,8 @@
         "en": "Resources for the 15 September 2026 meeting"
       },
       "summary": {
-        "th": "เปิดสไลด์ อ่านเนื้อหาประกอบ ลงทะเบียนเข้าร่วม และทดลองหน้าลงคะแนนได้จากหน้าการประชุม",
-        "en": "Access the slides, meeting brief, registration form and voting-screen preview in one place."
+        "th": "เปิดสไลด์ ดูวาระ ลงทะเบียนเข้าร่วม และทดลองหน้าลงคะแนนได้จากหน้าการประชุม",
+        "en": "Access the slides, agenda, registration form and voting-screen preview in one place."
       },
       "url": "meeting-2026-09-15.html"
     }
