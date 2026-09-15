@@ -1,0 +1,6 @@
+/.quarto/
+/published/
+.DS_Store
+*.log
+
+**/*.quarto_ipynb

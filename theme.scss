@@ -1,0 +1,53 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: "Aptos", "Arial", "Noto Sans Thai", sans-serif;
+$presentation-font-size-root: 32px;
+$presentation-heading-font: $font-family-sans-serif;
+$presentation-heading-color: #123a52;
+$presentation-heading-font-weight: 650;
+$presentation-h1-font-size: 2.1em;
+$presentation-h2-font-size: 1.52em;
+$body-bg: #fbfcfd;
+$body-color: #263b48;
+$link-color: #087f83;
+$selection-bg: #b8e4e2;
+$presentation-line-height: 1.3;
+
+/*-- scss:rules --*/
+.reveal .slides { text-align: left; }
+.reveal .slide h2 { margin: 0 0 0.65em; line-height: 1.12; letter-spacing: -0.025em; }
+.reveal .slide h2::after { content: ""; display: block; width: 2em; height: 5px; margin-top: 0.4em; background: #14888a; }
+.reveal p { margin: 0.4em 0 0.65em; }
+.reveal .slide ul, .reveal .slide ol { display: block; margin-left: 1em; }
+.reveal .slide li { padding-left: 0.18em; margin-bottom: 0.42em; }
+.reveal .slide li::marker { color: #087f83; font-weight: 650; }
+.reveal strong { font-weight: 650; color: #123a52; }
+.reveal .slide a { text-underline-offset: 0.15em; }
+.reveal .slide a:focus-visible { outline: 3px solid #14888a; outline-offset: 5px; }
+.reveal .slide img { border: 0; box-shadow: none; }
+.reveal .columns { gap: 1.5em; align-items: flex-start; }
+.reveal .column img { margin: 0; }
+.reveal .column p:first-child { margin-top: 0; }
+.reveal .slide .aside { font-size: 0.53em; line-height: 1.25; color: #566875; }
+.reveal .slide .aside a { color: #46646d; }
+.reveal .slide .slide-source { margin-top: 1.1em; font-size: 0.53em; line-height: 1.25; color: #566875; }
+.reveal .slide .slide-source a { color: #46646d; }
+.reveal .slide-number { font-family: $font-family-sans-serif; color: #566875; background: transparent; font-size: 16px; }
+.reveal .footer { color: #566875; font-size: 18px; }
+.reveal .progress { height: 4px; color: #14888a; }
+.reveal .controls { color: #087f83; }
+.reveal #title-slide { padding-top: 85px; }
+.reveal #title-slide .title { max-width: 1050px; margin-bottom: 0.32em; font-size: 2.28em; line-height: 1.03; letter-spacing: -0.045em; }
+.reveal #title-slide .title::before { content: "ANNUAL MEETING"; display: block; font-size: 19px; letter-spacing: 0.15em; color: #087f83; margin-bottom: 36px; font-weight: 650; }
+.reveal #title-slide .subtitle { color: #365769; font-size: 1.0em; line-height: 1.55; margin-bottom: 1.2em; }
+.reveal #title-slide .quarto-title-authors { justify-content: flex-start; margin: 0; }
+.reveal #title-slide .quarto-title-author { padding: 0; margin: 0; }
+.reveal #title-slide .quarto-title-author-name { color: #123a52; font-size: 0.8em; }
+.reveal #title-slide .date { margin-top: 0.45em; color: #566875; font-size: 0.8em; }
+.reveal #agenda ol { font-size: 0.87em; line-height: 1.2; }
+.reveal #agenda li { margin-bottom: 0.35em; }
+.reveal .slide .compact { font-size: 0.88em; }
+.reveal table { margin: 0; width: 100%; font-size: 0.78em; line-height: 1.2; border-collapse: collapse; }
+.reveal table th { color: #123a52; border-bottom: 2px solid #14888a; }
+.reveal table td { border-bottom: 1px solid #d5e0e6; }
+.reveal table th, .reveal table td { padding: 0.5em 0.4em; }
+@media print { .reveal .slide a { color: #123a52; } }

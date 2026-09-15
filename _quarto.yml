@@ -1,0 +1,46 @@
+project:
+  type: default
+  output-dir: published
+  render:
+    - index.qmd
+    - meeting-notes-th.qmd
+
+format:
+  html:
+    theme: default
+    toc: true
+    toc-depth: 2
+    embed-resources: true
+    css: brief.css
+  revealjs:
+    theme: [default, theme.scss]
+    width: 1280
+    height: 720
+    margin: 0.07
+    center: false
+    center-title-slide: false
+    transition: none
+    background-transition: none
+    slide-number: c/t
+    show-slide-number: all
+    hash: true
+    history: true
+    controls: true
+    controls-layout: bottom-right
+    progress: true
+    navigation-mode: linear
+    touch: true
+    keyboard: true
+    overview: true
+    menu: true
+    preview-links: false
+    auto-stretch: false
+    embed-resources: true
+    mathjax: false
+    footer: "ECS Thailand Section"
+    include-in-header: head.html
+
+execute:
+  enabled: false
+
+lang: en

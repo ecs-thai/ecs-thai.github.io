@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>ECS Thailand Section · Ballot preview</title>
+  <style>
+:root{--navy:#102b42;--ink:#18364a;--muted:#627584;--teal:#087f80;--teal-light:#e9f6f3;--line:#d9e3e8;--paper:#f3f6f8;--white:#fff;--red:#ad353b;--shadow:0 12px 36px rgba(19,47,65,.055)}
+    *{box-sizing:border-box}body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--paper)}button,input{font:inherit}button{cursor:pointer}button:disabled{cursor:wait;opacity:.58}a{color:var(--teal)}.shell{max-width:1040px;margin:auto;padding:0 32px}.masthead{background:var(--navy);color:#fff;position:relative;overflow:hidden}.masthead:after{content:"";position:absolute;width:400px;height:400px;right:-80px;top:-220px;border:1px solid #34546a;border-radius:50%;box-shadow:0 0 0 46px rgba(255,255,255,.025),0 0 0 94px rgba(255,255,255,.025);pointer-events:none}.mastline{display:flex;align-items:center;justify-content:space-between;padding-top:28px;gap:20px}.brand{display:flex;gap:14px;align-items:center}.brand-mark{width:48px;height:48px;border:1px solid #89b9b7;display:grid;place-items:center;border-radius:12px;flex-shrink:0}.brand-mark svg{width:32px;height:32px}.brand-name{font-weight:700;letter-spacing:.025em;font-size:18px}.brand-sub{font-size:12px;letter-spacing:.13em;color:#b4cad8;text-transform:uppercase}.secure{font-size:12px;color:#cbe0e5;border:1px solid #476071;border-radius:30px;padding:6px 12px;white-space:nowrap}.hero{padding:36px 0 58px;max-width:700px;position:relative;z-index:1}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.2em;font-weight:750;color:#77cec1;margin-bottom:10px}.hero h1{font-size:clamp(28px,5vw,38px);line-height:1.22;font-weight:650;letter-spacing:-.03em;margin:0 0 12px}.hero p{color:#c0d1dc;max-width:590px;font-size:15px;margin:0}.main{margin-top:-23px;position:relative;z-index:2;padding-bottom:45px}.workflow{padding:20px 26px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:28px}.steps{display:flex;gap:24px}.step{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--muted)}.step span{width:24px;height:24px;border:1px solid #cbd8df;display:grid;place-items:center;border-radius:50%;font-size:11px;font-weight:700}.step.active{color:var(--teal);font-weight:650}.step.active span{background:var(--teal);color:#fff;border-color:var(--teal)}.step.done span{background:var(--teal-light);color:var(--teal);border-color:#b5d9d1}.progress-text{font-size:12px;color:var(--muted);text-align:right}.intro{display:flex;justify-content:space-between;align-items:flex-start;gap:28px;margin:4px 0 22px}.intro h2{font-size:22px;letter-spacing:-.02em;margin:0 0 5px}.intro p{font-size:14px;color:var(--muted);margin:0;max-width:660px}.tag{font-size:11px;line-height:1.4;font-weight:700;letter-spacing:.04em;display:inline-flex;padding:6px 9px;border-radius:5px;color:var(--teal);background:var(--teal-light);white-space:nowrap}.office{margin:0 0 20px;padding:0;background:#fff;border:1px solid var(--line);border-radius:14px;min-width:0;box-shadow:var(--shadow)}.office-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;padding:23px 26px 17px;border-bottom:1px solid #edf1f4}.office h3{font-size:18px;font-weight:650;line-height:1.4;letter-spacing:-.01em;margin:0}.office-number{font-size:11px;color:var(--teal);letter-spacing:.1em;font-weight:700;margin-bottom:4px}.office-help{font-size:12px;color:var(--muted);margin-top:4px}.selection-status{font-size:11px;color:var(--muted);background:#f1f5f7;border-radius:20px;padding:4px 9px;white-space:nowrap}.selection-status.complete{background:var(--teal-light);color:var(--teal)}.choices{padding:12px 16px 16px;display:grid;gap:7px}.choice{border:1px solid transparent;display:flex;align-items:center;gap:12px;padding:13px 12px;border-radius:9px;cursor:pointer;transition:background .15s,border-color .15s}.choice:hover{background:#f5f9fa}.choice:has(input:checked){background:var(--teal-light);border-color:#a8d6ce}.choice input{width:19px;height:19px;flex-shrink:0;accent-color:var(--teal);margin:0}.candidate-name{font-size:15px;font-weight:600;line-height:1.4}.candidate-affiliation{font-size:12px;color:var(--muted);line-height:1.5;margin-top:2px}.abstain{border-top:1px solid #edf1f4;border-radius:0;margin-top:3px;padding-top:17px}.abstain .candidate-name{font-size:14px;font-weight:500}.approval-row{padding:17px 10px;border-bottom:1px solid #edf1f4;display:flex;align-items:center;justify-content:space-between;gap:16px}.approval-row:last-child{border:0}.approval-options{display:flex;gap:6px;flex-shrink:0}.approval-option{position:relative;cursor:pointer}.approval-option input{position:absolute;opacity:0;width:1px;height:1px}.approval-option span{font-size:12px;display:block;padding:8px 12px;border:1px solid var(--line);border-radius:7px;min-width:56px;text-align:center;background:#fff}.approval-option input:checked+span{color:var(--teal);border-color:var(--teal);background:var(--teal-light);font-weight:650}.approval-option input:focus-visible+span{outline:3px solid #69c6c1;outline-offset:2px}.action-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:23px 26px;display:flex;justify-content:space-between;align-items:center;gap:22px}.action-card p{font-size:13px;color:var(--muted);margin:0;max-width:510px}.button{border:0;border-radius:8px;padding:12px 20px;font-size:14px;font-weight:650;background:var(--teal);color:#fff;min-height:46px;white-space:nowrap}.button:hover:not(:disabled){background:#086c70}.button.secondary{border:1px solid var(--line);color:var(--ink);background:#fff}.button.secondary:hover:not(:disabled){background:#f4f7f9}.button:focus-visible,input:focus-visible{outline:3px solid #69c6c1;outline-offset:3px}.button-group{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.privacy{margin:22px 0 0;display:flex;gap:10px;font-size:11px;color:var(--muted);align-items:flex-start}.privacy svg{width:15px;height:17px;flex-shrink:0;margin-top:2px}.footer{border-top:1px solid var(--line);padding-top:21px;margin-top:28px;display:flex;justify-content:space-between;gap:16px;font-size:11px;color:var(--muted)}.state-card{padding:50px 36px;text-align:center;background:#fff;border:1px solid var(--line);border-radius:14px;margin-top:26px;box-shadow:var(--shadow)}.state-icon{height:58px;width:58px;border-radius:50%;margin:0 auto 19px;background:var(--teal-light);color:var(--teal);display:grid;place-items:center;font-size:26px}.state-card h2{font-size:25px;line-height:1.3;margin:0 0 11px;letter-spacing:-.02em}.state-card p{font-size:14px;color:var(--muted);max-width:490px;margin:0 auto 22px}.state-card p:last-child{margin-bottom:0}.spinner{width:24px;height:24px;border:2px solid #c2dcd7;border-top-color:var(--teal);border-radius:50%;animation:spin .9s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.notice{font-size:13px;padding:14px 17px;border-radius:9px;background:#fff3f1;border:1px solid #f1cbc6;color:#8e3c34;margin:0 0 20px}.notice[hidden]{display:none}.review-card{border:1px solid var(--line);border-radius:12px;background:#fff;padding:20px 25px;margin-bottom:14px}.review-card h3{margin:0 0 12px;font-size:16px}.review-line{display:flex;justify-content:space-between;gap:18px;font-size:14px;padding:7px 0;border-top:1px solid #edf1f4}.review-value{color:var(--teal);font-weight:600;text-align:right}.irreversible{background:#fff8e9;border:1px solid #eddfbc;color:#715c28;border-radius:9px;padding:14px 17px;font-size:13px;margin:19px 0}.demo-banner{background:#fff1cd;color:#624f1f;font-size:12px;text-align:center;padding:8px 20px;border-bottom:1px solid #e0cb8a;font-weight:600}.muted{color:var(--muted)}[hidden]{display:none!important}@media(max-width:650px){.shell{padding:0 18px}.mastline{padding-top:22px}.brand-name{font-size:16px}.brand-sub{font-size:10px}.brand-mark{width:41px;height:41px}.secure{display:none}.hero{padding:29px 0 47px}.workflow{padding:17px 15px;display:block}.steps{justify-content:space-between;gap:12px}.step{font-size:12px;gap:6px}.progress-text{margin-top:10px;text-align:left;font-size:11px}.intro{gap:13px;display:block}.intro .tag{margin-top:10px}.office-head{padding:19px 18px 15px}.office h3{font-size:17px}.choices{padding:9px 9px 13px}.approval-row{display:block;padding:15px 9px}.approval-options{margin-top:13px}.approval-option{flex:1}.approval-option span{padding:9px 10px}.action-card{display:block;padding:20px}.action-card .button,.action-card .button-group{margin-top:16px;width:100%}.action-card .button-group .button{margin-top:0;flex:1}.action-card>.button{width:100%}.footer{display:block}.footer span{display:block;margin-bottom:5px}.state-card{padding:38px 22px}.review-card{padding:18px}.review-line{font-size:13px}.hero h1{font-size:29px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.demo-banner{position:sticky;top:0;z-index:20;font-size:14px;padding:12px 20px;line-height:1.5}.demo-banner span{display:block}.preview-copy{max-width:650px}
+</style>
+</head>
+<body>
+  <div id="demoBanner" class="demo-banner" role="note"><span>PREVIEW ONLY · Fictional candidates · No votes are sent or recorded</span><span lang="th">ตัวอย่างหน้าลงคะแนนสำหรับทดลองเท่านั้น — ไม่มีการส่งหรือบันทึกคะแนน</span></div>
+  <header class="masthead">
+    <div class="shell">
+      <div class="mastline">
+        <div class="brand"><div class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M13 8h14M17 8v9L9 30c-1.4 2.3.1 4 2.5 4h17c2.4 0 3.9-1.7 2.5-4l-8-13V8" stroke="#a7dacf" stroke-width="1.7" stroke-linecap="round"/><path d="M13 26h14" stroke="#a7dacf" stroke-width="1.7"/><circle cx="21" cy="22" r="1.5" fill="#a7dacf"/></svg></div><div><div class="brand-name">ECS Thailand Section</div><div class="brand-sub">Section leadership election</div></div></div>
+        <span class="secure">Interactive preview</span>
+      </div>
+      <div class="hero"><div class="eyebrow">ECS Thailand Section</div><h1 id="electionTitle">Section leadership election</h1><p>Explore the ballot, review your choices, and try the final step.<br><span lang="th">ลองเลือกผู้สมัคร ตรวจทาน และทดลองกดส่งบัตรตัวอย่าง</span></p></div>
+    </div>
+  </header>
+  <main class="shell main" id="main">
+    <nav class="workflow" aria-label="Ballot progress" id="workflow"><div class="steps"><div class="step active" id="step1"><span>1</span>Choose</div><div class="step" id="step2"><span>2</span>Review</div><div class="step" id="step3"><span>3</span>Practice</div></div><div class="progress-text" id="progressText">Choose any sample candidates below</div></nav>
+    <div id="notice" class="notice" role="alert" hidden></div>
+    <noscript><div class="notice">Please enable JavaScript to try this offline ballot preview. No vote is recorded.</div></noscript>
+    <section id="content" aria-live="polite"></section>
+    <div class="privacy"><svg viewBox="0 0 18 20" fill="none" aria-hidden="true"><path d="M9 1.5 16 4v5c0 4.3-2.6 7.4-7 9.5C4.6 16.4 2 13.3 2 9V4z" stroke="currentColor" stroke-width="1.4"/><path d="m6 9 2 2 4-4" stroke="currentColor" stroke-width="1.4"/></svg><span>All candidates are fictional. Your practice selections exist only while this page is open and are cleared when you restart or reload. This standalone preview has no connection to an election system.</span></div>
+    <footer class="footer"><span>ECS Thailand Section · Member participation</span><a href="./">Back to meeting slides · กลับสู่สไลด์</a></footer>
+  </main>
+  <script>
+'use strict';
+const ballotConfig = {"electionId": "ecs-thailand-2026-rehearsal", "title": "ECS Thailand Section · Executive Committee Election", "majorityBasis": "BALLOTS_CAST", "minMembersAtLarge": 2, "offices": [{"id": "chair", "title": "Chair", "type": "SINGLE", "candidates": [{"id": "chair_a", "name": "Dr. Sample Candidate A", "affiliation": "Example University"}, {"id": "chair_b", "name": "Dr. Sample Candidate B", "affiliation": "Example Institute"}]}, {"id": "vice_chair", "title": "Vice Chair", "type": "SINGLE", "candidates": [{"id": "vice_a", "name": "Dr. Sample Candidate C", "affiliation": "Example University"}, {"id": "vice_b", "name": "Dr. Sample Candidate D", "affiliation": "Example Institute"}]}, {"id": "secretary", "title": "Secretary", "type": "SINGLE", "candidates": [{"id": "secretary_a", "name": "Dr. Sample Candidate E", "affiliation": "Example University"}]}, {"id": "treasurer", "title": "Treasurer", "type": "SINGLE", "candidates": [{"id": "treasurer_a", "name": "Dr. Sample Candidate F", "affiliation": "Example Institute"}]}, {"id": "members_at_large", "title": "Members-at-Large", "type": "APPROVAL", "candidates": [{"id": "mal_a", "name": "Dr. Sample Candidate G", "affiliation": "Example University"}, {"id": "mal_b", "name": "Dr. Sample Candidate H", "affiliation": "Example Institute"}, {"id": "mal_c", "name": "Dr. Sample Candidate I", "affiliation": "Example University"}]}]};
+let selections = {};
+  const content = document.getElementById('content');
+  const progressText = document.getElementById('progressText');
+  const notice = document.getElementById('notice');
+  const el = (tag, className, text) => { const node = document.createElement(tag); if (className) node.className = className; if (text !== undefined) node.textContent = text; return node; };
+  function showNotice(message) { notice.textContent = message; notice.hidden = !message; if (message) notice.scrollIntoView({behavior:'smooth',block:'center'}); }
+  function setStep(number) { for(let i=1;i<=3;i++){const node=document.getElementById('step'+i);node.className='step'+(i===number?' active':i<number?' done':'');if(i===number)node.setAttribute('aria-current','step');else node.removeAttribute('aria-current');} }
+  function countProgress() {
+    let total=0,complete=0;
+    ballotConfig.offices.forEach(office=>{if(office.type==='APPROVAL'){office.candidates.forEach(candidate=>{total++;if(selections[office.id]&&selections[office.id][candidate.id])complete++;});}else{total++;if(selections[office.id])complete++;}});
+    return {total,complete};
+  }
+  function updateProgress() {
+    const p=countProgress();progressText.textContent=p.complete+' of '+p.total+' choices completed';
+    ballotConfig.offices.forEach(office=>{const n=document.getElementById('status-'+office.id);if(!n)return;const done=office.type==='APPROVAL'?office.candidates.every(c=>selections[office.id]&&selections[office.id][c.id]):!!selections[office.id];n.textContent=done?'Complete':'Required';n.className='selection-status'+(done?' complete':'');});
+  }
+  function candidateLabel(candidate) {const label=el('div');label.append(el('div','candidate-name',candidate.name));if(candidate.affiliation)label.append(el('div','candidate-affiliation',candidate.affiliation));return label;}
+  function renderBallot() {
+    setStep(1);showNotice('');content.replaceChildren();const intro=el('div','intro');const copy=el('div');copy.append(el('h2','','Try the sample ballot'),el('p','','Choose one option for each single-seat office. For Members-at-Large, mark Yes, No, or Abstain for each candidate. Every choice is required.'));intro.append(copy,el('span','tag','FICTIONAL CANDIDATES'));content.append(intro);
+    const form=el('form');form.id='ballotForm';form.noValidate=true;
+    ballotConfig.offices.forEach((office,index)=>{
+      const section=el('section','office');section.setAttribute('aria-labelledby','office-'+office.id);const head=el('div','office-head'),names=el('div');const title=el('h3','',office.title);title.id='office-'+office.id;names.append(el('div','office-number','OFFICE '+String(index+1).padStart(2,'0')),title,el('div','office-help',office.type==='APPROVAL'?'Choose an option for every candidate. Multiple candidates may be elected.':'Choose one candidate or abstain.'));const status=el('span','selection-status','Required');status.id='status-'+office.id;head.append(names,status);section.append(head);const choices=el('div','choices');
+      if(office.type==='APPROVAL'){
+        if(!selections[office.id])selections[office.id]={};
+        office.candidates.forEach(candidate=>{
+          const row=el('div','approval-row');const info=candidateLabel(candidate);info.id='candidate-'+office.id+'-'+candidate.id;row.append(info);const options=el('div','approval-options');options.setAttribute('role','radiogroup');options.setAttribute('aria-labelledby',info.id);
+          ['YES','NO','ABSTAIN'].forEach(value=>{const label=el('label','approval-option');const input=el('input');input.type='radio';input.name=office.id+'__'+candidate.id;input.value=value;input.checked=selections[office.id][candidate.id]===value;input.required=true;input.addEventListener('change',()=>{selections[office.id][candidate.id]=value;updateProgress();showNotice('');});label.append(input,el('span','',value==='YES'?'Yes':value==='NO'?'No':'Abstain'));options.append(label);});row.append(options);choices.append(row);
+        });
+      }else{
+        choices.setAttribute('role','radiogroup');choices.setAttribute('aria-labelledby',title.id);
+        office.candidates.concat([{id:'ABSTAIN',name:'Abstain',affiliation:'I choose not to vote for this office.'}]).forEach(candidate=>{const label=el('label','choice'+(candidate.id==='ABSTAIN'?' abstain':''));const input=el('input');input.type='radio';input.name=office.id;input.value=candidate.id;input.checked=selections[office.id]===candidate.id;input.required=true;input.addEventListener('change',()=>{selections[office.id]=candidate.id;updateProgress();showNotice('');});label.append(input,candidateLabel(candidate));choices.append(label);});
+      }
+      section.append(choices);form.append(section);
+    });
+    const action=el('div','action-card');action.append(el('p','','Practice choosing candidates, then review your selections. This preview never sends or records votes.'));const review=el('button','button','Review ballot →');review.type='submit';action.append(review);form.append(action);
+    form.addEventListener('submit',event=>{event.preventDefault();const p=countProgress();if(p.complete!==p.total){showNotice('Please make every required choice. You may select Abstain.');const missing=Array.from(form.querySelectorAll('input[type=radio]')).find(input=>!Array.from(form.elements).some(other=>other.name===input.name&&other.checked));if(missing){missing.focus();missing.scrollIntoView({behavior:'smooth',block:'center'});}return;}renderReview();});content.append(form);updateProgress();
+  }
+  function reviewLine(name,value){const row=el('div','review-line');row.append(el('span','',name),el('span','review-value',value));return row;}
+  function renderReview() {
+    setStep(2);showNotice('');content.replaceChildren();progressText.textContent='Review your practice choices';const intro=el('div','intro'),copy=el('div');copy.append(el('h2','','Review the sample ballot'),el('p','','Check the sample choices below. You can edit them or simulate the final step without recording a vote.'));intro.append(copy,el('span','tag','PREVIEW REVIEW'));content.append(intro);
+    ballotConfig.offices.forEach(office=>{const card=el('section','review-card');card.append(el('h3','',office.title));if(office.type==='APPROVAL'){office.candidates.forEach(candidate=>{const value=selections[office.id][candidate.id];card.append(reviewLine(candidate.name,value==='YES'?'Yes':value==='NO'?'No':'Abstain'));});}else{const value=selections[office.id],candidate=office.candidates.find(c=>c.id===value);card.append(reviewLine('Your choice',value==='ABSTAIN'?'Abstain':candidate.name));}content.append(card);});
+    content.append(el('div','irreversible','PREVIEW ONLY — No vote will be sent or recorded. ตัวอย่างสำหรับทดลองเท่านั้น ไม่มีการส่งหรือบันทึกคะแนน'));
+    const action=el('div','action-card');action.append(el('p','','The next button only demonstrates the thank-you screen. You can restart this preview as often as you like.'));const group=el('div','button-group');const back=el('button','button secondary','Edit choices');back.type='button';back.id='editButton';back.addEventListener('click',renderBallot);const submit=el('button','button','Simulate submit');submit.type='button';submit.id='submitButton';submit.addEventListener('click',simulateSubmit);group.append(back,submit);action.append(group);content.append(action);window.scrollTo({top:0,behavior:'smooth'});
+  }
+
+function simulateSubmit() {
+  if (countProgress().complete !== countProgress().total) {
+    renderBallot();
+    showNotice('Please complete every practice choice. You may choose Abstain.');
+    return;
+  }
+  showNotice('');
+  setStep(3);
+  progressText.textContent = 'Preview complete · No vote recorded';
+  content.replaceChildren();
+  const card = el('div', 'state-card');
+  const title = el('h2', '', 'Thank you — preview complete');
+  title.tabIndex = -1;
+  card.append(el('div', 'state-icon', '✓'), title,
+    el('p', '', 'This was a practice ballot. No vote was sent or recorded.'),
+    el('p', '', 'ทดลองเสร็จแล้ว ไม่มีการส่งหรือบันทึกคะแนน สามารถเริ่มทดลองใหม่ได้'));
+  const restart = el('button', 'button', 'Try again · ทดลองใหม่');
+  restart.type = 'button';
+  restart.id = 'restartPreviewButton';
+  restart.addEventListener('click', () => {
+    selections = {};
+    renderBallot();
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  });
+  card.append(restart);
+  content.append(card);
+  selections = {};
+  title.focus();
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+document.getElementById('electionTitle').textContent = ballotConfig.title;
+renderBallot();
+
+</script>
+</body>
+</html>
