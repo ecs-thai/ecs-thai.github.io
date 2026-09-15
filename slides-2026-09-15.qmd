@@ -1,0 +1,292 @@
+---
+title: "ECS Thailand Section"
+subtitle: "Annual Meeting 2026<br>Montien Hotel, Bangkok<br>16:00–17:00 Bangkok time, hybrid meeting"
+author: "Prof. Soorathep Kheawhom, Chair"
+date: "2026-09-15"
+date-format: "D MMMM YYYY"
+lang: en
+format: revealjs
+output-file: slides-2026-09-15.html
+title-slide-attributes:
+  class: cover
+---
+
+## Meeting registration
+
+**ลงทะเบียนเข้าร่วมประชุม**
+
+::: {.columns}
+::: {.column width="42%"}
+![](registration-qr.png){width=360px fig-alt="QR code for meeting registration"}
+:::
+::: {.column width="58%"}
+**Please register once.**
+
+- First name and last name
+- Institution or university
+- Email
+
+Future-contact consent is **optional**.
+
+[Open the registration form](https://oxidized-challenge-ed9.notion.site/06105107298b4456b68b2af8b2f710d6?pvs=105)
+:::
+:::
+
+::: {.notes}
+Invite on-site and online participants to register. No Notion account is required. The organizer keeps responses privately with the meeting reference and submission time. Registration alone does not verify attendance or voting eligibility; confirm actual participation separately. Future-contact consent is not required to register.
+:::
+
+## Agenda
+
+1. Opening and Welcome
+2. Report on ECS Thailand Section Activities
+3. Financial Report — ECS activity-support briefing
+4. Activities and Plans for 2027
+5. Preparation for the 2026 Election of Officers and Executive Committee
+6. Other Business
+7. Closing Remarks
+
+::: {.notes}
+These are the seven items in the circulated agenda, in their original order. Item 5 prepares the election process; the election itself will be conducted separately. Invite confirmation of the agenda without implying that any additional business or decision has already been approved.
+:::
+
+## 1 Opening and Welcome
+
+Welcome to participants at **Montien Hotel** and joining **online**.
+
+- Welcome remarks by the Chair
+- Confirmation of the meeting agenda
+
+**Proposed outcomes:** identify 2027 priorities, discuss the nominating committee and assign follow-up responsibilities.
+
+::: {.notes}
+Suggested timing: 16:00–16:05. Welcome both groups and confirm that online participants can hear and contribute. Explain that the meeting will distinguish reports, proposals, agreed actions and matters requiring later approval. The time allocations in these notes are suggested facilitation timings.
+
+**ร่างคำพูดภาษาไทย**
+
+**เวลาเสนอ: 16:00–16:05 น.**
+
+ขอต้อนรับทุกท่านที่เข้าร่วมประชุม ECS Thailand Section ในวันนี้ ทั้งที่โรงแรมและทางออนไลน์ ขอใช้เวลาร่วมกันหนึ่งชั่วโมงเพื่อทบทวนการดำเนินงาน แลกเปลี่ยนแนวคิดกิจกรรมสำหรับปี 2027 และเตรียมกระบวนการเลือกตั้งคณะกรรมการ ก่อนเริ่มขอเช็กว่าผู้เข้าร่วมทั้งสองช่องทางสามารถรับฟังและแสดงความคิดเห็นได้ และขอทบทวนวาระทั้ง 7 ข้อตามลำดับที่แจ้งไว้
+
+**คำถามชวนหารือ:** มีข้อเสนอปรับลำดับหรือเพิ่มประเด็นที่ควรรับไว้ในวาระอื่น ๆ หรือไม่ และมีเรื่องใดที่สมาชิกต้องการให้การประชุมครั้งนี้ช่วยเดินหน้าต่อเป็นพิเศษ? **ผลที่ต้องการ:** ที่ประชุมเข้าใจวัตถุประสงค์ตรงกัน ยืนยันลำดับวาระที่จะใช้จริง และทราบว่าการเลือกตั้งจะดำเนินการแยกจากการประชุมครั้งนี้
+:::
+
+## 2 Report on Section Activities
+
+**Prepared for this meeting in 2026**
+
+- Participant registration with private Notion records
+- Public meeting materials and a voting-screen preview
+- A basis for future member communication, with optional consent
+
+Invite confirmed **2025–2026 activity, membership and ECS-engagement updates**.
+
+::: {.notes}
+Suggested timing: 16:05–16:15. The registration form, public meeting materials and standalone voting-screen preview were prepared for this meeting. They do not establish past activity counts, verified membership totals or approved election readiness. Invite confirmed 2025–2026 activity and membership updates and record the supporting references in the minutes.
+
+**ร่างคำพูดภาษาไทย**
+
+**เวลาเสนอ: 16:05–16:15 น.**
+
+สำหรับการประชุมครั้งนี้ ได้เตรียมแบบลงทะเบียนที่เก็บรายชื่อใน Notion ส่วนตัว เอกสารและสไลด์ประชุมบนเว็บ รวมถึงตัวอย่างหน้าลงคะแนนเพื่อรับข้อคิดเห็นจากสมาชิกแล้ว จากนั้นขอเชิญผู้รับผิดชอบและสมาชิกเพิ่มเติมกิจกรรมที่เกิดขึ้นจริงในช่วงปี 2025–2026 พร้อมช่วงเวลาและข้อมูลประกอบ รวมทั้งข้อมูลสมาชิกและการมีส่วนร่วมกับ ECS ที่ตรวจสอบแล้ว เพื่อร่วมกันพิจารณาสิ่งที่ควรต่อยอดหรือปรับปรุง
+
+**คำถามชวนหารือ:** สมาชิกได้รับประโยชน์จากการมีส่วนร่วมในรูปแบบใดมากที่สุด มีอุปสรรคใดต่อการเข้าร่วม และมีข้อมูลกิจกรรมหรือสมาชิกส่วนใดที่ควรแก้ไขหรือเพิ่มเติม? **ผลที่ต้องการ:** ได้สาระสรุปที่ผู้รับผิดชอบตรวจยืนยันได้ รายการข้อมูลที่ยังต้องเติม และบทเรียนที่ใช้ประกอบการเลือกกิจกรรมปี 2027 โดยยังไม่สรุปตัวเลขหรือความสำเร็จที่ไม่มีข้อมูลรองรับ
+:::
+
+## 3 ECS Support for Section Activities
+
+**No financial report is being presented today.**
+
+- Conditional annual assistance: **up to USD 2,000**
+- Financial and activity reports required **before 31 January**
+- Accounts managed by ECS; officer details and financial records required
+- Thailand's allocation and available balance: **to be confirmed**
+
+::: {.slide-source}
+[ECS Bylaws, amended 22 May 2025 · Article X.4, p. 9](https://www.electrochem.org/wp-content/uploads/2025/06/ECS-Bylaws-Amended-May-22_-2025.pdf) · Checked 15 September 2026
+:::
+
+::: {.notes}
+Suggested timing for the two funding slides: 16:15–16:22. No Section financial report is presented at this meeting. This does not mean the Section has a zero balance or that ECS reporting requirements are waived. The USD 2,000 is a conditional annual ceiling, not a confirmed award or an automatic reimbursement promise. The financial report required for support must follow generally accepted accounting practices.
+
+**ร่างคำพูดภาษาไทย**
+
+**เวลาเสนอ: 16:15–16:22 น. · ใช้ช่วงเวลาของวาระการเงินเดิม**
+
+วันนี้ไม่มีรายงานการเงินของ Section นำเสนอ จึงขอใช้วาระนี้แจ้งเรื่องเงินสนับสนุนกิจกรรมจาก ECS เพื่อประกอบการวางแผนงาน ข้อบังคับ ECS ระบุการสนับสนุนสูงสุด **2,000 ดอลลาร์สหรัฐต่อปี** ภายใต้เงื่อนไขส่งรายงานการเงินและกิจกรรม **ก่อนวันที่ 31 มกราคม** บัญชีอยู่ภายใต้การจัดการของ ECS และคำขอต้องมีรายชื่อกรรมการปัจจุบัน/ที่เพิ่งได้รับเลือก พร้อมรายงานการเงินที่เป็นไปตามหลักการบัญชีที่ยอมรับทั่วไป ขณะนี้ยังไม่ได้ยืนยันสิทธิ์ วงเงินที่จัดสรร หรือยอดที่ Thailand Section ใช้ได้ การไม่มีรายงานในวันนี้ไม่ได้ยกเว้นหน้าที่รายงานเพื่อขอรับเงินสนับสนุน [อ้างอิง ECS Bylaws, Article X.4 หน้า 9](https://www.electrochem.org/wp-content/uploads/2025/06/ECS-Bylaws-Amended-May-22_-2025.pdf)
+:::
+
+## 3 Preparing an Activity Funding Request
+
+**Proposed next steps for the Chair and Treasurer**
+
+1. Confirm reporting status, available support and the current form with ECS
+2. Prepare an activity plan and an itemized budget
+3. Obtain written agreement on eligible costs and the payment process
+4. Keep supporting records and complete the required reporting
+
+**Contact:** Maggie Hohenadel, Section & Chapter Engagement Specialist
+
+::: {.slide-source}
+[Contact ECS](https://www.electrochem.org/contact-ecs) · Confirm the current procedure before committing expenditure. The publicly linked audit template contains old dates.
+:::
+
+::: {.notes}
+This four-step sequence is a practical proposal, not a published ECS claim procedure. The current ECS contact page lists Maggie Hohenadel, extension 121; the membership contact is customerservice@electrochem.org. Ask which costs are eligible, whether ECS pays directly or reimburses, required receipts and currency evidence, approval and claim deadlines, and who may submit. The Sections page links an older audit template with a January 2024 deadline, so obtain the current form and instructions. Do not use Student Chapter reimbursement procedures as Section policy.
+:::
+
+## 4 Activities and Plans for 2027
+
+**Proposals for discussion**
+
+- Technical seminar or invited-speaker session
+- Student research talks and presentation practice
+- Joint activities with universities, ECS and related organizations
+- A shared calendar and a coordinator for each priority
+
+For each idea: **purpose · timing · resources · willing coordinator**
+
+::: {.notes}
+Suggested timing: 16:22–16:35. Gather ideas before prioritizing. Ask about the intended audience and practical requirements. Record a proposed coordinator only when that person agrees; do not present an idea, budget or partnership as an approved commitment. Capture topics needing a separate decision.
+
+**ร่างคำพูดภาษาไทย**
+
+**เวลาเสนอ: 16:22–16:35 น.**
+
+สำหรับปี 2027 ขอเสนอแนวคิดตั้งต้นสามแบบเพื่อให้สมาชิกช่วยเลือกและปรับให้เหมาะสม ได้แก่ การเสวนาออนไลน์สั้น ๆ เกี่ยวกับหัวข้อ electrochemistry ที่สมาชิกสนใจ เช่น วิธีวัดและการตีความผล การอบรมเชิงปฏิบัติการครึ่งวันเกี่ยวกับการออกแบบการทดลองและคุณภาพข้อมูลโดยสำรวจความพร้อมของสถานที่และวิทยากรก่อน และเวทีนำเสนอผลงานสั้นหรือโปสเตอร์สำหรับนักศึกษาและนักวิจัยรุ่นใหม่ พร้อมช่วงรับข้อเสนอแนะจากผู้เข้าร่วม อาจหารือการเชื่อมกิจกรรมกับ ECS หรือองค์กรที่เกี่ยวข้องเมื่อมีผู้สนใจประสานงาน ทั้งหมดนี้เป็นข้อเสนอใหม่สำหรับการพิจารณา
+
+**คำถามชวนหารือ:** หากเริ่มเพียงหนึ่งหรือสองกิจกรรม สมาชิกจะเลือกข้อใดและเพราะอะไร กลุ่มเป้าหมายควรเป็นใคร ช่วงใดของปี 2027 เหมาะสม รูปแบบออนไลน์หรือพบกันเหมาะกว่า และต้องใช้ทรัพยากรอะไรบ้าง? **ผลที่ต้องการ:** ได้แนวคิดที่ควรพัฒนาต่อหนึ่งหรือสองเรื่อง โดยระบุวัตถุประสงค์ ช่วงเวลาที่เสนอ ทรัพยากรที่ต้องประเมิน และผู้ประสานงานที่ยินดีรับหน้าที่ พร้อมกำหนดว่าจะนำรายละเอียดกลับมาพิจารณาเมื่อใด
+:::
+
+## 5 Election Preparation: Roles
+
+**Preparation today · Election separately**
+
+**Officers:** Chair · Vice Chair · Secretary · Treasurer
+
+**Members-at-Large:** at least two
+
+The Executive Committee also includes the immediate Past Chair and the Section's IM Committee representative.
+
+Confirm candidate eligibility and acceptance before finalizing the slate.
+
+::: {.slide-source}
+[ECS Thailand Section Bylaws · Articles IV and VII](https://www.electrochem.org/wp-content/uploads/2024/07/2024-05-30-ECS-Thailand-Section-Bylaws.pdf)
+:::
+
+::: {.notes}
+Suggested timing for all three election-preparation slides: 16:35–16:52. Review the roles without announcing nominees or appointments. IM refers to the ECS Individual Membership Committee. Confirm personal eligibility and term dates separately; no candidacy is established here.
+
+**ร่างคำพูดภาษาไทย**
+
+**เวลาเสนอ: 16:35–16:52 น.**
+
+วาระนี้มุ่งเตรียมความพร้อมสำหรับการเลือกตั้งปี 2026 ซึ่งจะจัดแยกต่างหาก ขอทบทวนตำแหน่งที่ต้องดำเนินการเลือกตั้ง ข้อกำหนดตามข้อบังคับของ ECS Thailand Section และขั้นตอนจัดตั้งคณะกรรมการสรรหา จากนั้นหารือวิธีรับการเสนอชื่อ ตรวจสอบคุณสมบัติ และขอความยินยอมจากผู้ได้รับการเสนอชื่อ รวมถึงการเตรียมรายชื่อผู้มีสิทธิ์และการสื่อสารกับสมาชิก หากพิจารณาช่วงตุลาคม–ธันวาคม 2026 ให้ระบุเป็นกรอบเวลาที่เสนอ จนกว่าจะตรวจสอบข้อกำหนดและดำเนินการที่จำเป็นครบถ้วน
+
+**คำถามชวนหารือ:** ยังมีข้อกำหนดหรือวันสำคัญใดที่ต้องยืนยัน ใครยินดีรับผิดชอบงานติดตามแต่ละขั้น และต้องเตรียมข้อมูลใดก่อนประกาศกำหนดการอย่างเป็นทางการ? **ผลที่ต้องการ:** ได้รายการงานก่อนการเลือกตั้ง ผู้รับผิดชอบที่ยอมรับหน้าที่ และกรอบเวลาสำหรับตรวจสอบขั้นตอน โดยบันทึกการเสนอชื่อหรือการแต่งตั้งเฉพาะที่เกิดขึ้นจริงตามกระบวนการ หากเปิดตัวอย่างระบบลงคะแนน ให้ใช้เพื่อรับข้อคิดเห็นเรื่องความเข้าใจและการใช้งาน พร้อมระบุชัดว่าเป็นตัวอย่างและไม่ใช่การลงคะแนนจริง
+:::
+
+## 5 Forming the Nominating Committee
+
+**Three Section members in good standing**
+
+- Appointed by the Chair with Executive Committee approval
+- Identify candidates and obtain their acceptance
+- Report nominations in writing to the Chair and Secretary before the Annual Business Meeting
+
+Additional nominations before election: **from the floor or a five-member petition**, with candidate acceptance.
+
+::: {.slide-source}
+[ECS Thailand Section Bylaws · Articles IV.3 and VII.1](https://www.electrochem.org/wp-content/uploads/2024/07/2024-05-30-ECS-Thailand-Section-Bylaws.pdf)
+:::
+
+::: {.notes}
+Discuss formation of the committee. Record proposed names separately from an appointment and its Executive Committee approval. No committee members are preselected in this deck. Use Article VII.1 when reviewing the complete nomination requirements.
+:::
+
+## 5 Proposed Election Timeline
+
+| Stage | Work to complete |
+|---|---|
+| **Today** | Review requirements and identify follow-up responsibilities |
+| **After this meeting** | Complete committee formation, nominations and voter-list checks |
+| **October–December 2026** | Proposed window for the separate election, subject to required procedures |
+
+Before opening a ballot, confirm **dates · voting rules · communication · result certification**.
+
+::: {.slide-source}
+[ECS Thailand Section Bylaws · Articles IV, V and VII](https://www.electrochem.org/wp-content/uploads/2024/07/2024-05-30-ECS-Thailand-Section-Bylaws.pdf)
+:::
+
+::: {.notes}
+This is a planning proposal, not an approved election schedule. Verify required notice, quorum and meeting scheduling authority before formal action. Election approval uses a majority of those present at the Annual Section Business Meeting or timely ballot respondents; confirm the applicable denominator and Abstain treatment. Confirm the founding committee's term dates before fixing a handover. Do not describe proposed voting-system changes as already deployed or tested.
+:::
+
+## 5 Voting System Preview
+
+**ทดลองหน้าลงคะแนน**
+
+::: {.columns}
+::: {.column width="42%"}
+![](voting-demo-qr.png){width=360px fig-alt="QR code for the voting preview"}
+:::
+::: {.column width="58%"}
+**Try the sample ballot.**
+
+- Choose sample candidates or Abstain
+- Review and edit your choices
+- Simulate submission
+
+**Fictional candidates. No votes recorded.**
+
+[ecs-thai.github.io/vote-demo.html](https://ecs-thai.github.io/vote-demo.html)
+:::
+:::
+
+::: {.notes}
+Invite participants to scan the QR or use the link. This demonstration covers choosing, reviewing and simulating ballot submission. It uses fictional candidates and stores no selections after a reload or restart. It is not the real election and does not demonstrate identity checks or one-time voting credentials. The real election is conducted separately.
+:::
+
+## 6 Other Business
+
+**Suggestions and matters raised by Section members**
+
+- Section website and shared meeting resources
+- Communication with members and future contact preferences
+- Additional matters proposed by participants
+
+::: {.notes}
+Suggested timing: 16:52–16:57. Invite contributions from both on-site and online participants. Record the matter, its outcome and any person who accepts follow-up. Keep proposals distinct from decisions actually made.
+
+**ร่างคำพูดภาษาไทย**
+
+**เวลาเสนอ: 16:52–16:57 น.**
+
+ขอเปิดโอกาสให้สมาชิกเสนอเรื่องที่ยังไม่ได้อยู่ในวาระก่อนหน้า ทั้งจากผู้เข้าร่วมในห้องและทางออนไลน์ อาจเป็นความต้องการด้านวิชาการ รูปแบบการสื่อสารกับสมาชิก โอกาสเชื่อมโยงนักศึกษาและนักวิจัย หรือประเด็นการทำงานของ Section ขอให้ผู้เสนอระบุสั้น ๆ ว่าเรื่องนั้นคืออะไร เหตุใดจึงควรติดตาม และต้องการให้ Section ช่วยดำเนินการในรูปแบบใด
+
+**คำถามชวนหารือ:** เรื่องใดสามารถกำหนดขั้นตอนต่อไปได้ในวันนี้ เรื่องใดต้องมีข้อมูลเพิ่มเติม และเรื่องใดควรนัดหารือแยกเพื่อให้มีเวลาพิจารณาเพียงพอ? **ผลที่ต้องการ:** ได้รายการประเด็นที่รับไว้ พร้อมขั้นตอนติดตามและผู้ประสานงานที่ยินดีรับหน้าที่ โดยระบุให้ชัดว่าแต่ละเรื่องเป็นข้อเสนอ เรื่องรับทราบ หรือข้อสรุปที่ที่ประชุมตกลงจริง
+:::
+
+## 7 Closing Remarks
+
+**Thank you · ขอบคุณครับ**
+
+- Read back agreed actions, responsible persons and dates
+- Confirm the next follow-up arrangement
+- The election will be conducted separately
+
+![](registration-qr.png){width=180px fig-alt="QR code for meeting registration"}
+
+[Register for this meeting](https://oxidized-challenge-ed9.notion.site/06105107298b4456b68b2af8b2f710d6?pvs=105) · [Meeting notes and funding details](https://ecs-thai.github.io/meeting-notes-th.html)
+
+::: {.notes}
+Suggested timing: 16:57–17:00. Summarize only what participants actually agreed. Thank both attendance groups and remind anyone who has not registered to complete the form once. Record the actual closing time. Minutes and other meeting outcomes should be reviewed before publication.
+
+**ร่างคำพูดภาษาไทย**
+
+**เวลาเสนอ: 16:57–17:00 น.**
+
+ก่อนปิดประชุม ขอทวนเฉพาะสิ่งที่เราได้ตกลงร่วมกันวันนี้ ได้แก่ [เติมข้อสรุปที่เกิดขึ้นจริง] [เติมผู้รับผิดชอบที่ยอมรับหน้าที่] และ [เติมวันที่หรือวิธีติดตามที่ตกลงกัน] ขอให้ผู้รับผิดชอบช่วยยืนยันความเข้าใจ และขอรับข้อแก้ไขหากมีประเด็นใดที่สรุปคลาดเคลื่อน สำหรับการเลือกตั้ง จะมีการดำเนินการแยกตามขั้นตอนและแจ้งรายละเอียดที่ยืนยันแล้วให้สมาชิกทราบต่อไป
+
+**คำถามยืนยันก่อนปิด:** มีข้อสรุปใดที่ต้องแก้ไข มีงานใดที่ยังไม่มีผู้รับผิดชอบหรือกำหนดติดตาม และทุกท่านเข้าใจขั้นตอนต่อไปตรงกันหรือไม่? **ผลที่ต้องการ:** ได้รายการติดตามที่ชัดเจนสำหรับจัดทำบันทึกการประชุม จากนั้นกล่าวขอบคุณผู้เข้าร่วมทุกท่านและปิดประชุม โดยบันทึกเวลาปิดจริง
+:::

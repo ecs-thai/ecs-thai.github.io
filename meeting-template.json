@@ -1,0 +1,42 @@
+{
+  "id": "2027-01-01-example",
+  "date": "2027-01-01",
+  "title": {
+    "th": "ตัวอย่างเท่านั้น — แทนด้วยชื่อการประชุมที่ยืนยันแล้ว",
+    "en": "EXAMPLE ONLY — replace with the confirmed meeting title"
+  },
+  "time": {
+    "th": "แทนด้วยเวลาประชุมและเขตเวลาที่ประกาศ",
+    "en": "Replace with the announced meeting time and time zone"
+  },
+  "venue": {
+    "th": "แทนด้วยสถานที่หรือช่องทางเข้าร่วมที่เปิดเผยได้",
+    "en": "Replace with the public venue or participation format"
+  },
+  "format": {
+    "th": "แทนด้วยรูปแบบการประชุม",
+    "en": "Replace with the meeting format"
+  },
+  "summary": {
+    "th": "ตัวอย่างที่ไม่ถูกโหลดเข้าหน้าเว็บ: แทนด้วยวัตถุประสงค์ที่ยืนยันแล้วและเปลี่ยนวันที่ตัวอย่างก่อนคัดลอกลง content.json",
+    "en": "Inactive example: replace with the confirmed purpose and replace the sample date before copying into content.json."
+  },
+  "materials": [
+    {
+      "kind": "slides",
+      "title": {
+        "th": "ตัวอย่างลิงก์สไลด์ — เพิ่มเมื่อมีไฟล์จริงเท่านั้น",
+        "en": "Example slide link — add only when the file exists"
+      },
+      "detail": {
+        "th": "แทนด้วยคำอธิบายเอกสารจริง หรือใช้ materials: [] หากยังไม่มีเอกสาร",
+        "en": "Replace with the actual document description, or use materials: [] if no documents are available."
+      },
+      "url": "slides-2027-01-01-example.html",
+      "type": "WEB"
+    }
+  ],
+  "registration_url": null,
+  "registration_qr": null,
+  "minutes": null
+}

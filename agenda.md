@@ -1,5 +1,7 @@
 # ECS Thailand Section Annual Meeting 2026
 
+[Meeting resources](meeting-2026-09-15.html) · [Slides](slides-2026-09-15.html)
+
 **Tuesday, 15 September 2026 · 16:00-17:00 (Bangkok time)**
 
 Montien Hotel, Bangkok, Thailand · Hybrid meeting (on-site and Zoom)

@@ -2,7 +2,7 @@ project:
   type: default
   output-dir: published
   render:
-    - index.qmd
+    - slides-2026-09-15.qmd
     - meeting-notes-th.qmd
 
 format:

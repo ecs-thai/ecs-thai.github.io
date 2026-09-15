@@ -1,0 +1,17 @@
+{
+  "id": "example-announcement-2027-01-01",
+  "date": "2027-01-01",
+  "category": {
+    "th": "ตัวอย่างเท่านั้น — แทนด้วยหมวดข่าว",
+    "en": "EXAMPLE ONLY — replace with the category"
+  },
+  "title": {
+    "th": "ตัวอย่างที่ไม่ถูกโหลดเข้าหน้าเว็บ — แทนด้วยหัวข้อประกาศจริง",
+    "en": "Inactive example — replace with the actual announcement title"
+  },
+  "summary": {
+    "th": "เปลี่ยนวันที่ตัวอย่างและสรุปข่าวจากข้อมูลที่ยืนยันแล้ว ลิงก์ต้องเปิดหน้าที่มีอยู่จริงก่อนคัดลอกลง content.json",
+    "en": "Replace the sample date and summarize verified information. The destination must exist before copying into content.json."
+  },
+  "url": "meeting-2027-01-01-example.html"
+}

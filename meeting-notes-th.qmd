@@ -8,7 +8,7 @@ lang: th
 format: html
 ---
 
-[เปิดสไลด์ประชุม](https://ecs-thai.github.io/) · [ลงทะเบียน](https://oxidized-challenge-ed9.notion.site/06105107298b4456b68b2af8b2f710d6?pvs=105) · [ทดลองหน้าลงคะแนน](https://ecs-thai.github.io/vote-demo.html)
+[หน้าการประชุม](https://ecs-thai.github.io/meeting-2026-09-15.html) · [เปิดสไลด์ประชุม](https://ecs-thai.github.io/slides-2026-09-15.html) · [ลงทะเบียน](https://oxidized-challenge-ed9.notion.site/06105107298b4456b68b2af8b2f710d6?pvs=105) · [ทดลองหน้าลงคะแนน](https://ecs-thai.github.io/vote-demo.html)
 
 **15 กันยายน 2026 · 16:00–17:00 น. เวลาไทย · Montien Hotel, Bangkok และผู้เข้าร่วมทางออนไลน์**
 

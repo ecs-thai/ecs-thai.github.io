@@ -1,58 +1,77 @@
-# ECS Thailand Section Annual Meeting 2026
+# ECS Thailand Section website
 
-Quarto reveal.js meeting slides for 15 September 2026, 16:00–17:00 Bangkok time, at Montien Hotel and on Zoom.
+A Thai–English website for Section information, activity announcements, meeting resources, and published minutes at [ecs-thai.github.io](https://ecs-thai.github.io/).
 
-The deck follows the seven previously circulated agenda items. Election preparation remains item 5. The election itself takes place separately. No financial report is presented. Agenda 3 instead explains conditional ECS activity support, with official sources and follow-up questions. Activity figures, financial figures, candidates and meeting decisions have not been invented.
+**คู่มือเพิ่มการประชุม ข่าว และรายงานการประชุม:** ดู `CONTENT-GUIDE-TH.md` ส่วน `meeting-template.json` และ `news-template.json` เป็นตัวอย่างสำหรับคัดลอกและแก้ไข ไม่ได้ถูกนำขึ้นเว็บไซต์โดยอัตโนมัติ
 
-[Open the slides](https://ecs-thai.github.io/) · [Thai meeting notes and ECS funding procedure](https://ecs-thai.github.io/meeting-notes-th.html) · [Original meeting agenda](agenda.md)
+## Main pages and permanent meeting links
 
-## Presenting
+| Page | URL |
+|---|---|
+| หน้าแรก / Home | `/` or `/index.html` |
+| เกี่ยวกับเรา / About | `/about.html` |
+| ข่าวและกิจกรรม / News & activities | `/activities.html` |
+| คลังการประชุม / Meetings | `/meetings.html` |
+| เข้าร่วม ECS / Join ECS | `/join.html` |
 
-Open [the meeting slides](https://ecs-thai.github.io/) in a browser.
+Each meeting has a permanent flat URL: `meeting-{id}.html`. The meeting dated 15 September 2026 uses [meeting-2026-09-15.html](https://ecs-thai.github.io/meeting-2026-09-15.html). Its presentation is [slides-2026-09-15.html](https://ecs-thai.github.io/slides-2026-09-15.html), while the Thai briefing remains at [meeting-notes-th.html](https://ecs-thai.github.io/meeting-notes-th.html).
 
-เปิดลิงก์ก่อนเริ่มประชุม กด **F** เพื่อแสดงเต็มจอ ใช้ลูกศรซ้าย–ขวาเปลี่ยนสไลด์ และกด **Esc** เพื่อดูภาพรวม สามารถสแกน QR ในสไลด์ลงทะเบียนได้ทันที รายชื่อผู้ลงทะเบียนยังเก็บใน Notion ส่วนตัวของผู้จัดประชุม
+The site starts in Thai and offers a TH/EN switch. Meeting and news content needs both `th` and `en` values. The archive supports searching by meeting title or date and filtering for meetings with published minutes, including drafts identified as such.
 
-ไฟล์ `index.html` เปิดจากเครื่องได้สำหรับการนำเสนอสำรองโดยไม่ต้องต่ออินเทอร์เน็ต ส่วนการส่งแบบฟอร์มลงทะเบียนต้องใช้อินเทอร์เน็ต
+## What to edit
 
-- **Right / Space**: next slide
-- **Left**: previous slide
-- **F**: full screen, subject to browser support
-- **Esc**: slide overview
-- **S**: speaker view, which the browser may open in another window
+| Source | Purpose |
+|---|---|
+| `content.json` | Live meeting records, news items, and Section contact/membership fields |
+| `build_site.py` | Builds the five main pages and one detail page per meeting; contains shared page copy and layouts |
+| `site.css`, `site.js` | Site styling, language switching, navigation, archive filtering, and old slide-link compatibility |
+| `slides-2026-09-15.qmd`, `theme.scss`, `head.html` | The 2026 reveal.js presentation and its styling/header |
+| `meeting-notes-th.qmd`, `brief.css` | The 2026 Thai preparation brief |
+| `_quarto.yml` | Explicit presentation/brief render list and Quarto output settings |
+| `vote-demo.html` | Standalone demonstration ballot, using fictional candidates |
+| `meeting-template.json`, `news-template.json` | Inactive examples; copy an edited object into the appropriate `content.json` array to publish it |
 
-Speaker notes are part of the public HTML. They contain meeting prompts, not private records.
+Edit the source, then rebuild. Changes made directly to generated main pages, meeting detail pages, slides, or briefing HTML will be overwritten.
 
-## Voting preview
+## Build
 
-[Open the voting preview](https://ecs-thai.github.io/vote-demo.html). The slides contain its QR code and clickable link.
-
-หน้าตัวอย่างใช้ผู้สมัครสมมติ ทดลองเลือก ตรวจทาน และกดส่งจำลองได้ ไม่มีการส่งหรือบันทึกคะแนน และยังไม่ใช่หน้าลงคะแนนจริง
-
-The preview runs entirely in the browser, without an election backend, voter identity checks or one-time-token validation. Its selections exist only in memory and are cleared on restart or reload. Hosting providers may maintain ordinary access logs; this demo does not submit ballot choices.
-
-## Editing
-
-Install [Quarto](https://quarto.org/docs/download/). This project uses Quarto 1.10.18 and the built-in reveal.js format.
-
-Edit `meeting-notes-th.qmd` for the Thai meeting brief. Edit `index.qmd` for slide content and `theme.scss` for presentation styling, then run:
+Use Python 3 and Quarto; the existing documents were built with Quarto 1.10.18. Python uses only its standard library. Run these commands from this project folder:
 
 ```sh
 quarto render
+python3 build_site.py
 ```
 
-The results are `published/index.html` and `published/meeting-notes-th.html`. It embeds the presentation's styles, scripts and QR image. Copy both generated HTML files to the repository root to update the branch-based GitHub Pages site. Do not edit the generated HTML as the source.
+Quarto renders only the presentations and briefs listed in `_quarto.yml`, writing them under `published/`. It does **not** build the Section homepage. The Python builder copies referenced local HTML documents from `published/` into the project root, then generates the main pages and meeting detail pages there. Referenced documents include every meeting’s `materials` and `minutes`; reserved website page filenames are excluded from copying.
 
-The source can also be rendered with `quarto preview` for local editing.
+When only meeting/news metadata changes, run `python3 build_site.py` once the required document files exist. For a future presentation or brief, add its source to the render list and its HTML filename to the meeting’s `materials`, then run both commands. New referenced HTML is copied automatically. Add PDFs and registration QR images directly to the project root; use a unique `registration_qr` filename for each future event. The builder checks that referenced local documents and registration QR files exist.
 
-## Registration and data
+To preview from the project folder:
 
-The public registration link appears in the slides. The organizer's Notion database keeps participant details privately and stores the event reference and registration time. Future-contact consent is optional. Check the submitted names against actual attendance and the separate eligible-voter list where relevant.
+```sh
+python3 -m http.server 8000
+```
 
-Do not add participant emails, private Notion exports, voting credentials, Zoom access credentials or administrator keys to this public repository.
+Open `http://localhost:8000/`. Check both languages, the new meeting/news links, document links, and any minutes status before publishing.
 
-## Sources
+## Publish
 
-- The Chair's previously circulated agenda and corrected meeting time.
-- [ECS Thailand Section Bylaws approved 30 May 2024](https://www.electrochem.org/wp-content/uploads/2024/07/2024-05-30-ECS-Thailand-Section-Bylaws.pdf).
-- [Quarto reveal.js documentation](https://quarto.org/docs/presentations/revealjs/).
-- [Quarto GitHub Pages documentation](https://quarto.org/docs/publishing/github-pages.html).
+Publish the prepared **project-root files** to the root of the `ecs-thai.github.io` repository, keeping the Pages publishing source consistent with the existing setup. Include generated HTML, `site.css`, `site.js`, the QR images, `.nojekyll`, and every local document referenced by `content.json`. Keep the public source files, content data, guide, and templates in the repository for future editing.
+
+Do not upload `published/`, `.quarto/`, caches, logs, the portable Quarto runtime, or the surrounding workspace. Do not copy `published/index.html` over the homepage or restore the old presentation source as `index.qmd`. After publication, confirm the live homepage and dated document links; uploading files is separate from Pages completing its deployment.
+
+## Preserved links and QR codes
+
+- The root is now the Section homepage. Old `/#/slide-id` and `/index.html#/slide-id` links redirect to the dated 2026 presentation with their query string and hash preserved. Ordinary homepage anchors stay on the homepage.
+- Keep the 2026 presentation’s slide IDs and order to preserve named and numbered reveal links. Bare old `/` links now show the homepage, which links to the meeting.
+- `vote-demo.html` and `voting-demo-qr.png` remain at the root. The QR still opens the demonstration, not a real election.
+- `registration-qr.png` remains the QR for the **15 September 2026 event**. It points directly to that event’s public registration form. Future meetings need a separate event form and must not reuse this QR.
+- Keep `meeting-notes-th.html` and `agenda.md` available for existing links.
+
+## Minutes, registration, and public content
+
+Use `"minutes": null` until an actual public minutes file exists. A minutes entry must have `status: "draft"` or `status: "approved"`; use `approved` only after approval has occurred. The Thai speaking outline is preparation material, not minutes. The 2026 meeting has no financial report presented; its third agenda slot provides conditional ECS activity-support information instead.
+
+Future meeting registration should use a separate public Notion form for that event, with responses kept privately by the organizer. Registration does not establish attendance, ECS membership, or voting eligibility. Consent to future contact remains optional.
+
+All site files and presentation speaker notes are public. Keep participant lists, private Notion exports, meeting access credentials, voting credentials, and administrator keys out of the repository. The voting preview uses fictional candidates, submits no votes, and clears its in-memory choices on reload.

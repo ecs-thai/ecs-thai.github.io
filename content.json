@@ -1,0 +1,112 @@
+{
+  "section": {
+    "name": "ECS Thailand Section",
+    "chair": "Prof. Soorathep Kheawhom",
+    "established": "2024-05-30",
+    "membership_url": "https://www.electrochem.org/individual-membership",
+    "join_url": "https://community.electrochem.org/eWeb/DynamicPage.aspx?WebCode=MembershipJoinRenew",
+    "affiliation_email": "customerservice@electrochem.org"
+  },
+  "meetings": [
+    {
+      "id": "2026-09-15",
+      "date": "2026-09-15",
+      "title": {
+        "th": "การประชุม ECS Thailand Section ประจำปี 2026",
+        "en": "ECS Thailand Section Annual Meeting 2026"
+      },
+      "time": {
+        "th": "16:00–17:00 น. (เวลาไทย)",
+        "en": "16:00–17:00 (Bangkok time)"
+      },
+      "venue": {
+        "th": "โรงแรมมณเฑียร กรุงเทพฯ และออนไลน์",
+        "en": "Montien Hotel, Bangkok & online"
+      },
+      "format": {
+        "th": "ประชุมแบบผสมผสาน",
+        "en": "Hybrid meeting"
+      },
+      "summary": {
+        "th": "ทบทวนกิจกรรม หารือแนวทางรับเงินสนับสนุนจาก ECS เสนอแผนปี 2027 และเตรียมกระบวนการเลือกตั้ง",
+        "en": "Section updates, ECS activity support, plans for 2027, and preparation for the separate election."
+      },
+      "materials": [
+        {
+          "kind": "slides",
+          "title": {
+            "th": "สไลด์ประชุม",
+            "en": "Meeting slides"
+          },
+          "detail": {
+            "th": "14 หน้า พร้อมบันทึกช่วยพูดภาษาไทย",
+            "en": "14 slides with Thai speaker notes"
+          },
+          "url": "slides-2026-09-15.html",
+          "type": "WEB"
+        },
+        {
+          "kind": "briefing",
+          "title": {
+            "th": "เนื้อหาประกอบทั้ง 7 วาระ",
+            "en": "Agenda briefing & funding guidance"
+          },
+          "detail": {
+            "th": "ร่างคำพูดและวิธีประสานขอเงินสนับสนุน ECS",
+            "en": "Thai speaking outline and sourced ECS funding information"
+          },
+          "url": "meeting-notes-th.html",
+          "type": "TH"
+        },
+        {
+          "kind": "agenda",
+          "title": {
+            "th": "วาระการประชุม",
+            "en": "Meeting agenda"
+          },
+          "detail": {
+            "th": "วาระเดิม 7 ข้อ พร้อมคำชี้แจงวาระการเงิน",
+            "en": "The seven circulated items with the funding-briefing clarification"
+          },
+          "url": "https://github.com/ecs-thai/ecs-thai.github.io/blob/main/agenda.md",
+          "type": "EN"
+        },
+        {
+          "kind": "demo",
+          "title": {
+            "th": "ตัวอย่างหน้าลงคะแนน",
+            "en": "Voting-screen preview"
+          },
+          "detail": {
+            "th": "ผู้สมัครสมมติ ทดลองได้โดยไม่มีการส่งคะแนน",
+            "en": "Fictional candidates; practice without submitting a vote"
+          },
+          "url": "vote-demo.html",
+          "type": "DEMO"
+        }
+      ],
+      "registration_url": "https://oxidized-challenge-ed9.notion.site/06105107298b4456b68b2af8b2f710d6?pvs=105",
+      "minutes": null,
+      "registration_qr": "registration-qr.png"
+    }
+  ],
+  "news": [
+    {
+      "id": "meeting-materials-2026-09-15",
+      "date": "2026-09-15",
+      "category": {
+        "th": "ประกาศการประชุม",
+        "en": "Meeting announcement"
+      },
+      "title": {
+        "th": "เอกสารสำหรับการประชุมวันที่ 15 กันยายน 2026",
+        "en": "Resources for the 15 September 2026 meeting"
+      },
+      "summary": {
+        "th": "เปิดสไลด์ อ่านเนื้อหาประกอบ ลงทะเบียนเข้าร่วม และทดลองหน้าลงคะแนนได้จากหน้าการประชุม",
+        "en": "Access the slides, meeting brief, registration form and voting-screen preview in one place."
+      },
+      "url": "meeting-2026-09-15.html"
+    }
+  ]
+}
