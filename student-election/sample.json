@@ -1,0 +1,68 @@
+{
+  "mode": "demo",
+  "apiBase": "",
+  "chapter": "Chulalongkorn University Student Chapter",
+  "electionId": "cu-student-chapter-preview",
+  "opensAt": null,
+  "closesAt": null,
+  "offices": [
+    {
+      "id": "president",
+      "th": "ประธาน",
+      "en": "President",
+      "candidates": [
+        {
+          "id": "p1",
+          "name": "ผู้สมัครตัวอย่าง A / Sample A",
+          "affiliation": "จุฬาลงกรณ์มหาวิทยาลัย / Chulalongkorn University",
+          "bio": "สนับสนุนกิจกรรมที่นักศึกษาออกแบบร่วมกัน / Supporting student-led activities"
+        },
+        {
+          "id": "p2",
+          "name": "ผู้สมัครตัวอย่าง B / Sample B",
+          "affiliation": "จุฬาลงกรณ์มหาวิทยาลัย / Chulalongkorn University",
+          "bio": "เชื่อมโยงนักวิจัยรุ่นใหม่ / Connecting early-career researchers"
+        }
+      ]
+    },
+    {
+      "id": "vice_president",
+      "th": "รองประธาน",
+      "en": "Vice President",
+      "candidates": [
+        {
+          "id": "v1",
+          "name": "ผู้สมัครตัวอย่าง C / Sample C",
+          "affiliation": "จุฬาลงกรณ์มหาวิทยาลัย / Chulalongkorn University",
+          "bio": "ร่วมจัดสัมมนาและกิจกรรมแลกเปลี่ยน / Organizing seminars and exchanges"
+        }
+      ]
+    },
+    {
+      "id": "secretary",
+      "th": "เลขานุการ",
+      "en": "Secretary",
+      "candidates": [
+        {
+          "id": "s1",
+          "name": "ผู้สมัครตัวอย่าง D / Sample D",
+          "affiliation": "จุฬาลงกรณ์มหาวิทยาลัย / Chulalongkorn University",
+          "bio": "ประสานงานและดูแลบันทึกกิจกรรม / Coordinating and documenting activities"
+        }
+      ]
+    },
+    {
+      "id": "treasurer",
+      "th": "เหรัญญิก",
+      "en": "Treasurer",
+      "candidates": [
+        {
+          "id": "t1",
+          "name": "ผู้สมัครตัวอย่าง E / Sample E",
+          "affiliation": "จุฬาลงกรณ์มหาวิทยาลัย / Chulalongkorn University",
+          "bio": "ดูแลค่าใช้จ่ายและรายงานการเงิน / Managing expenses and financial reports"
+        }
+      ]
+    }
+  ]
+}

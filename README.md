@@ -76,3 +76,7 @@ Use `"minutes": null` until an actual public minutes file exists. A minutes entr
 Future meeting registration should use a separate public Notion form for that event, with responses kept privately by the organizer. Registration does not establish attendance, ECS membership, or voting eligibility. Consent to future contact remains optional.
 
 Publish only the slides and documents selected for public use. Keep the Chair’s speaking outlines and presenter notes outside the public project and repository, including the Quarto source and generated HTML. Also keep participant lists, private Notion exports, meeting access credentials, voting credentials, and administrator keys out of the repository. The voting preview uses fictional candidates, submits no votes, and clears its in-memory choices on reload.
+
+## Student Chapter election
+
+`student-election/` contains the Thai/English Chulalongkorn University Student Chapter election page, linked from Join ECS. It currently shows a draft with no real candidates or voting dates. Its sample ballot records no votes. See `student-election/README.md` for configuration, the separately hosted ballot API, and private voter-code handling. GitHub Pages serves only the frontend; the API has not been deployed.

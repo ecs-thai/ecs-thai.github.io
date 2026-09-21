@@ -1,0 +1,34 @@
+{
+  "mode": "draft",
+  "apiBase": "",
+  "chapter": "Chulalongkorn University Student Chapter",
+  "electionId": "cu-student-chapter-election",
+  "opensAt": null,
+  "closesAt": null,
+  "offices": [
+    {
+      "id": "president",
+      "th": "ประธาน",
+      "en": "President",
+      "candidates": []
+    },
+    {
+      "id": "vice_president",
+      "th": "รองประธาน",
+      "en": "Vice President",
+      "candidates": []
+    },
+    {
+      "id": "secretary",
+      "th": "เลขานุการ",
+      "en": "Secretary",
+      "candidates": []
+    },
+    {
+      "id": "treasurer",
+      "th": "เหรัญญิก",
+      "en": "Treasurer",
+      "candidates": []
+    }
+  ]
+}
