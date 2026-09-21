@@ -1,0 +1,21 @@
+{
+  "name": "ecs-community",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  "observability": {
+    "enabled": false
+  },
+  "vars": {
+    "ORIGIN": "https://ecs-thai.github.io",
+    "SITE": "https://ecs-thai.github.io/community"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ecs-community",
+      "database_id": "321c31e9-e270-45de-8279-88eb14c59ab3",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

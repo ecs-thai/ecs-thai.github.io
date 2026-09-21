@@ -1,0 +1,21 @@
+{
+  "name": "ecs-community-staging",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  "observability": {
+    "enabled": false
+  },
+  "vars": {
+    "ORIGIN": "https://ecs-thai.github.io",
+    "SITE": "https://ecs-thai.github.io/community"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ecs-community-staging",
+      "database_id": "e4dfa2bb-3681-4ae1-a492-ab854cec532e",
+      "migrations_dir": "migrations"
+    }
+  ]
+}
