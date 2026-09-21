@@ -5,7 +5,7 @@ sys.path.insert(0,str(Path(__file__).parents[1]/'backend'))
 from candidates import clean_photo
 
 def request(api,token,route,body,binary=False):
-    req=urllib.request.Request(api.rstrip('/')+route,data=json.dumps(body).encode(),headers={'Content-Type':'application/json','Authorization':'Bearer '+token})
+    req=urllib.request.Request(api.rstrip('/')+route,data=json.dumps(body).encode(),headers={'Content-Type':'application/json','Authorization':'Bearer '+token,'User-Agent':'ECS-Section-Admin/1.0'})
     with urllib.request.urlopen(req,timeout=45) as response:
         raw=response.read();return raw if binary else json.loads(raw)
 

@@ -2,7 +2,11 @@
 
 Selected hosting: GitHub Pages for the existing website, Workers for intake, D1 for private records, and a private R2 bucket for photos. No voting-code issuance, email sending, or ballot submission routes are exposed by this Worker.
 
-Current status: Cloudflare login succeeded and the production D1 database ecs-section-candidates was created with migration 0001 applied. R2 activation is awaiting the account owner's acceptance of its usage-based billing terms. No live bucket or Worker has been created. Public config.json remains disconnected and closed. Local D1/R2 tests passed.
+Current status (2026-09-22): Production is deployed at https://ecs-section-candidates.ecs-thailand-election.workers.dev with the D1 migration applied and the private R2 bucket connected. The owner activated R2. Nominations are open and public config.json connects the GitHub Pages forms to this service. Voting remains in draft mode, with no voting codes generated or emails sent.
+
+Live staging checks passed nomination intake, private photo upload, profile retrieval, two-stage approval, publication, revision protection, and automatic removal from the public feed after an edit. Staging uses a separate Worker, D1 database, and private R2 bucket configured in wrangler.staging.json; nominations there are closed. Synthetic records are confined to staging.
+
+On the installation machine, the production operator credential is stored privately at ~/ecs-section-private/cloudflare-admin-token (mode 600), outside the repository. Do not share or commit this file. Existing election Workers are unchanged.
 
 ## Deployment after account setup
 

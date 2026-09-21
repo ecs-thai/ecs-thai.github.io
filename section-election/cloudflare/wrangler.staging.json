@@ -1,0 +1,26 @@
+{
+  "name": "ecs-section-candidates-staging",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  "observability": {
+    "enabled": false
+  },
+  "vars": {
+    "ORIGIN": "https://ecs-thai.github.io"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ecs-section-candidates-staging",
+      "database_id": "8bb3b546-a881-4216-94d7-612406c18978",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "PHOTOS",
+      "bucket_name": "ecs-section-candidate-photos-staging"
+    }
+  ]
+}

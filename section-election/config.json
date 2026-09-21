@@ -1,11 +1,11 @@
 {
   "mode": "draft",
-  "apiBase": "",
+  "apiBase": "https://ecs-section-candidates.ecs-thailand-election.workers.dev",
   "chapter": "ECS Thailand Section",
   "electionId": "ecs-thailand-2026",
   "opensAt": null,
   "closesAt": null,
-  "nominationsOpen": false,
+  "nominationsOpen": true,
   "reviewStages": 2,
   "offices": [
     {
