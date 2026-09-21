@@ -2,6 +2,18 @@
 
 Updated: 22 September 2026 (Asia/Bangkok).
 
+## สรุปสำหรับทำงานต่อ
+
+- Section: เปิดรับการเสนอชื่อและข้อมูลผู้สมัครจริงแล้ว ผ่านการทดสอบบน Cloudflare
+- Student Chapter: เปิดรับการเสนอชื่อจริงแล้ว รับรูป ประวัติ และตำแหน่งผ่านลิงก์ส่วนตัว ระบบลงคะแนนติดตั้งและทดสอบในพื้นที่แยกแล้ว
+- Student ทดสอบส่งพร้อมกัน 4 ครั้งได้เพียง 1 บัตร และตรวจผลรวมหลังปิดผ่าน
+- ยังไม่เปิดลงคะแนนจริง ยังไม่สร้างหรือส่งรหัสลงคะแนนให้บุคคลจริง
+- เหลือรายชื่อผู้สมัคร การตรวจรับ รายชื่อผู้มีสิทธิ์ วันเวลาและกติกาเลือกตั้ง จากนั้นจึงสร้าง/ส่งรหัสเมื่ออาจารย์สั่ง
+- ระบบส่งอีเมลอัตโนมัติยังไม่ได้ตั้งค่า มีเครื่องมือเตรียมร่างอีเมล
+- Section มีระบบ vote เดิมอยู่แล้ว ยังไม่ได้เชื่อมข้อมูลผู้สมัครชุดนี้เข้าระบบ vote เดิม
+- ห้ามสรุปว่าทั้งสองระบบเหลือเพียงรหัส ต้องตรวจรายการข้างต้นก่อน
+- รายละเอียดทางเทคนิคและวิธีดำเนินการอยู่ด้านล่างและในคู่มือของแต่ละระบบ
+
 ## User decisions to preserve
 
 - Use GitHub ecs-thai and Cloudflare; avoid fixed monthly hosting charges. Stay within free allowances and monitor R2 overages.
@@ -43,7 +55,7 @@ Updated: 22 September 2026 (Asia/Bangkok).
 
 ## Deployment verification
 
-Local and isolated live staging checks passed. Public website deployment and browser verification are the final checks for this update.
+Local and isolated live staging checks passed. GitHub Pages deployment succeeded and the live Student nomination form was verified in the browser with all four offices. Production was verified with zero candidates, zero voters, zero ballots, nominations open and no voting schedule.
 
 ## Later work requiring actual election information / explicit instruction
 
