@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'self' https:; img-src 'self' https:; base-uri 'none'; form-action 'none'">
   <title>ECS Thailand Section · Ballot preview</title>
   <style>
 :root{--navy:#102b42;--ink:#18364a;--muted:#627584;--teal:#087f80;--teal-light:#e9f6f3;--line:#d9e3e8;--paper:#f3f6f8;--white:#fff;--red:#ad353b;--shadow:0 12px 36px rgba(19,47,65,.055)}
@@ -110,7 +110,7 @@ function simulateSubmit() {
   title.focus();
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
-(async()=>{try{const response=await fetch('approved.json',{cache:'no-store'});if(!response.ok)throw Error();ballotConfig=await response.json();document.getElementById('electionTitle').textContent=ballotConfig.title;if(!ballotConfig.offices.some(o=>o.candidates.length)){content.replaceChildren(el('h2','','ยังไม่มีประกาศผู้สมัคร / Candidates have not been announced'),el('p','','ข้อมูลจะแสดงหลังคณะกรรมการบริหารเห็นชอบ / Profiles appear after Executive Committee approval.'));return;}renderBallot();}catch{content.replaceChildren(el('p','','ยังโหลดข้อมูลผู้สมัครไม่ได้ / Candidate information is unavailable.'));}})();
+(async()=>{try{const settingsResponse=await fetch('config.json',{cache:'no-store'});if(!settingsResponse.ok)throw Error();const settings=await settingsResponse.json();const response=await fetch(settings.apiBase?settings.apiBase.replace(/\/$/,'')+'/approved':'approved.json',{cache:'no-store'});if(!response.ok)throw Error();ballotConfig=await response.json();document.getElementById('electionTitle').textContent=ballotConfig.title;if(!ballotConfig.offices.some(o=>o.candidates.length)){content.replaceChildren(el('h2','','ยังไม่มีประกาศผู้สมัคร / Candidates have not been announced'),el('p','','ข้อมูลจะแสดงหลังคณะกรรมการบริหารเห็นชอบ / Profiles appear after Executive Committee approval.'));return;}renderBallot();}catch{content.replaceChildren(el('p','','ยังโหลดข้อมูลผู้สมัครไม่ได้ / Candidate information is unavailable.'));}})();
 
 </script>
 </body>

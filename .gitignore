@@ -27,3 +27,9 @@
 /section-election/**/*codes*.csv
 /section-election/**/*links*.csv
 /section-election/**/*roster*.csv
+
+# Cloudflare local state and private development credentials
+**/node_modules/
+**/.wrangler/
+.dev.vars
+.dev.vars.*

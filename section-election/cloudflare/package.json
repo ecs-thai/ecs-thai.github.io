@@ -1,0 +1,13 @@
+{
+  "name": "ecs-section-candidates",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "$HOME/.venvs/research/bin/python test-local.py"
+  },
+  "devDependencies": {
+    "wrangler": "4.135.0"
+  }
+}

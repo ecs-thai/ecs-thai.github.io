@@ -1,0 +1,10 @@
+{
+  "name": "ecs-section-candidates",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  "observability": {"enabled": false},
+  "vars": {"ORIGIN": "https://ecs-thai.github.io"},
+  "d1_databases": [{"binding":"DB","database_name":"ecs-section-candidates","database_id":"REPLACE_WITH_CREATED_DATABASE_ID","migrations_dir":"migrations"}],
+  "r2_buckets": [{"binding":"PHOTOS","bucket_name":"ecs-section-candidate-photos"}]
+}
