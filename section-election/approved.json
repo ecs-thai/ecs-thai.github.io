@@ -1,0 +1,36 @@
+{
+  "electionId": "ecs-thailand-2026",
+  "title": "ECS Thailand Section \u00b7 Executive Committee Election",
+  "offices": [
+    {
+      "id": "chair",
+      "title": "Chair",
+      "type": "SINGLE",
+      "candidates": []
+    },
+    {
+      "id": "vice_chair",
+      "title": "Vice Chair",
+      "type": "SINGLE",
+      "candidates": []
+    },
+    {
+      "id": "secretary",
+      "title": "Secretary",
+      "type": "SINGLE",
+      "candidates": []
+    },
+    {
+      "id": "treasurer",
+      "title": "Treasurer",
+      "type": "SINGLE",
+      "candidates": []
+    },
+    {
+      "id": "members_at_large",
+      "title": "Members-at-Large",
+      "type": "APPROVAL",
+      "candidates": []
+    }
+  ]
+}

@@ -21,3 +21,9 @@
 /student-election/**/*codes*.csv
 /student-election/**/*links*.csv
 /student-election/**/*roster*.csv
+
+/section-election/private/
+/section-election/backend/private/
+/section-election/**/*codes*.csv
+/section-election/**/*links*.csv
+/section-election/**/*roster*.csv

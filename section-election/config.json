@@ -1,0 +1,47 @@
+{
+  "mode": "draft",
+  "apiBase": "",
+  "chapter": "ECS Thailand Section",
+  "electionId": "ecs-thailand-2026",
+  "opensAt": null,
+  "closesAt": null,
+  "nominationsOpen": false,
+  "reviewStages": 2,
+  "offices": [
+    {
+      "id": "chair",
+      "th": "ประธาน",
+      "en": "Chair",
+      "type": "SINGLE",
+      "candidates": []
+    },
+    {
+      "id": "vice_chair",
+      "th": "รองประธาน",
+      "en": "Vice Chair",
+      "type": "SINGLE",
+      "candidates": []
+    },
+    {
+      "id": "secretary",
+      "th": "เลขานุการ",
+      "en": "Secretary",
+      "type": "SINGLE",
+      "candidates": []
+    },
+    {
+      "id": "treasurer",
+      "th": "เหรัญญิก",
+      "en": "Treasurer",
+      "type": "SINGLE",
+      "candidates": []
+    },
+    {
+      "id": "members_at_large",
+      "th": "กรรมการทั่วไป",
+      "en": "Members-at-Large",
+      "type": "APPROVAL",
+      "candidates": []
+    }
+  ]
+}

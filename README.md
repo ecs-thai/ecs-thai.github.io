@@ -80,3 +80,7 @@ Publish only the slides and documents selected for public use. Keep the Chair’
 ## Student Chapter election
 
 `student-election/` contains the Thai/English Chulalongkorn University Student Chapter election page, linked from Join ECS. It currently shows a draft with no real candidates or voting dates. Its sample ballot records no votes. See `student-election/README.md` for configuration, the separately hosted ballot API, and private voter-code handling. GitHub Pages serves only the frontend; the API has not been deployed.
+
+## Section nominations
+
+`section-election/` provides a bilingual nomination preview, candidate photo and biography form with office selection, and an approved-candidate ballot preview. Intake is closed by default. The optional private service and two-stage review procedure are documented in [section-election/README.md](section-election/README.md). The original `vote-demo.html` remains unchanged.
