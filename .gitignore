@@ -15,3 +15,9 @@
 *.db
 /student-election/private/
 /student-election/backend/private/
+
+# Private election mail drafts and imports
+*.eml
+/student-election/**/*codes*.csv
+/student-election/**/*links*.csv
+/student-election/**/*roster*.csv
