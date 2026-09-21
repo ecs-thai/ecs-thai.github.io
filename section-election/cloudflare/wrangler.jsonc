@@ -5,6 +5,6 @@
   "workers_dev": true,
   "observability": {"enabled": false},
   "vars": {"ORIGIN": "https://ecs-thai.github.io"},
-  "d1_databases": [{"binding":"DB","database_name":"ecs-section-candidates","database_id":"REPLACE_WITH_CREATED_DATABASE_ID","migrations_dir":"migrations"}],
+  "d1_databases": [{"binding":"DB","database_name":"ecs-section-candidates","database_id":"fd40977d-d0ff-450d-82aa-ed698317bbe7","migrations_dir":"migrations"}],
   "r2_buckets": [{"binding":"PHOTOS","bucket_name":"ecs-section-candidate-photos"}]
 }

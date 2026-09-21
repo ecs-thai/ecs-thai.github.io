@@ -2,7 +2,7 @@
 
 Selected hosting: GitHub Pages for the existing website, Workers for intake, D1 for private records, and a private R2 bucket for photos. No voting-code issuance, email sending, or ballot submission routes are exposed by this Worker.
 
-Current status: local D1/R2 tests passed; no live account, database, bucket, or Worker has been created. Public config.json remains disconnected and closed. The operator must finish account signup before deployment.
+Current status: Cloudflare login succeeded and the production D1 database ecs-section-candidates was created with migration 0001 applied. R2 activation is awaiting the account owner's acceptance of its usage-based billing terms. No live bucket or Worker has been created. Public config.json remains disconnected and closed. Local D1/R2 tests passed.
 
 ## Deployment after account setup
 
