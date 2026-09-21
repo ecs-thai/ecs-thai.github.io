@@ -3,3 +3,5 @@
 .candidate-link{display:block;color:var(--teal);margin:0 0 20px}.panel input[type=email],.panel textarea{width:100%;padding:12px;border:1px solid #98adaa;border-radius:6px;margin:8px 0 20px;font:inherit}.panel label{display:block}.candidate-photo{width:92px;height:110px;object-fit:cover;border-radius:8px;margin-bottom:8px}#photo-preview{max-width:200px;max-height:240px;object-fit:contain;border-radius:8px;display:block;margin:12px 0}textarea{resize:vertical}input[type=file]{max-width:100%;margin:12px 0}.panel .consent{display:flex;align-items:flex-start;gap:10px;margin:18px 0}
 
 [hidden]{display:none!important}
+
+.panel select{width:100%;padding:12px;border:1px solid #98adaa;border-radius:6px;margin:8px 0 20px;background:white;color:var(--ink);font:inherit}

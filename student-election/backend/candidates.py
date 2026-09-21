@@ -12,7 +12,7 @@ def invite(path,roster,output,base_url,days=14):
     db=connect(path);schema(db);config=config_for(db)
     if config.get('opensAt') and time.time()>=stamp(config['opensAt']):raise ValueError('Voting has already opened')
     offices={o['id'] for o in config['offices']}
-    if not rows or any(r.get('office') not in offices or '@' not in r.get('email','') for r in rows):raise ValueError('Use name,email,office columns and valid office IDs')
+    if not rows or any((r.get('office','') and r['office'] not in offices) or '@' not in r.get('email','') for r in rows):raise ValueError('Use name,email columns; an optional office must be valid')
     with open(output,'x',encoding='utf-8',newline='') as f:
         import os
         os.chmod(output,0o600)
@@ -20,8 +20,8 @@ def invite(path,roster,output,base_url,days=14):
             db.execute('BEGIN IMMEDIATE');writer=csv.writer(f);writer.writerow(['candidate_id','name','email','office','upload_link'])
             for r in rows:
                 ident=uuid.uuid4().hex;secret=secrets.token_urlsafe(32)
-                db.execute('INSERT INTO candidates(id,office,invite_hash,expires,profile) VALUES(?,?,?,?,?)',(ident,r['office'],digest(secret),time.time()+days*86400,json.dumps({'name':r.get('name',''),'affiliation':'Chulalongkorn University','bio':''})))
-                writer.writerow([ident,r.get('name',''),r['email'],r['office'],base_url+'#invite='+secret])
+                db.execute('INSERT INTO candidates(id,office,invite_hash,expires,profile) VALUES(?,?,?,?,?)',(ident,r.get('office',''),digest(secret),time.time()+days*86400,json.dumps({'name':r.get('name',''),'affiliation':'Chulalongkorn University','bio':''})))
+                writer.writerow([ident,r.get('name',''),r['email'],r.get('office',''),base_url+'#invite='+secret])
             f.flush();os.fsync(f.fileno());db.execute('COMMIT')
         except Exception:
             db.execute('ROLLBACK');Path(output).unlink(missing_ok=True);raise
@@ -48,14 +48,16 @@ def candidate_request(path,route,body):
         row=db.execute('SELECT id,office,expires,profile,photo,submitted,approved FROM candidates WHERE invite_hash=?',(digest(body['invite']),)).fetchone()
         if not row or row[2]<time.time():return 403,{'error':'invalid_invite'}
         config=config_for(db);locked=bool(config.get('opensAt') and time.time()>=stamp(config['opensAt']))
-        if route=='/candidate/profile':return 200,{'profile':json.loads(row[3]),'office':next(o for o in config['offices'] if o['id']==row[1]),'hasPhoto':row[4] is not None,'submitted':bool(row[5]),'approved':bool(row[6]),'locked':locked}
+        if route=='/candidate/profile':return 200,{'profile':json.loads(row[3]),'office':next((o for o in config['offices'] if o['id']==row[1]),None),'offices':config['offices'],'hasPhoto':row[4] is not None,'submitted':bool(row[5]),'approved':bool(row[6]),'locked':locked}
         if locked:return 409,{'error':'closed'}
+        office=body.get('office')
+        if not isinstance(office,str) or office not in {o['id'] for o in config['offices']}:return 400,{'error':'invalid_office'}
         profile={k:body.get(k,'').strip() if isinstance(body.get(k,''),str) else '' for k in ['name','affiliation','bio']}
         if not 1<=len(profile['name'])<=150 or not 1<=len(profile['affiliation'])<=200 or not 1<=len(profile['bio'])<=3000 or body.get('consent') is not True:return 400,{'error':'invalid_profile'}
         try:photo=clean_photo(body['photo']) if body.get('photo') else row[4]
         except ValueError:return 400,{'error':'invalid_photo'}
         if photo is None:return 400,{'error':'invalid_photo'}
-        db.execute('UPDATE candidates SET profile=?,photo=?,submitted=1,approved=0 WHERE id=?',(json.dumps(profile),photo,row[0]));db.execute('COMMIT')
+        db.execute('UPDATE candidates SET office=?,profile=?,photo=?,submitted=1,approved=0 WHERE id=?',(office,json.dumps(profile),photo,row[0]));db.execute('COMMIT')
         return 200,{'status':'pending_review'}
     finally:
         if db.in_transaction:db.execute('ROLLBACK')
