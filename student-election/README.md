@@ -1,3 +1,7 @@
+# Live hosting
+
+Cloudflare replaces the optional local Python server for production. See [operator instructions](cloudflare/README.md) and [current status](../ELECTION-STATUS.md). Instructions below describe the original local backend. Do not issue real codes until explicitly authorized.
+
 # Chulalongkorn University Student Chapter election
 
 หน้าเว็บ: https://ecs-thai.github.io/student-election/

@@ -1,0 +1,26 @@
+{
+  "name": "ecs-student-staging",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  "observability": {
+    "enabled": false
+  },
+  "vars": {
+    "ORIGIN": "https://ecs-thai.github.io"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ecs-student-staging",
+      "database_id": "149d5524-8f4d-41e2-8a3e-3dbdbd909a40",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "PHOTOS",
+      "bucket_name": "ecs-student-photos-staging"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "ecs-student-election",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  "observability": {
+    "enabled": false
+  },
+  "vars": {
+    "ORIGIN": "https://ecs-thai.github.io"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ecs-student-election",
+      "database_id": "299dd451-9af3-41e8-aa7a-5ce2e0a06d6e",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "PHOTOS",
+      "bucket_name": "ecs-student-photos"
+    }
+  ]
+}
