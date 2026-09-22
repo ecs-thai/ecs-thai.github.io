@@ -1,0 +1,2 @@
+'use strict';
+document.getElementById('copy-link')?.addEventListener('click',async()=>{const input=document.getElementById('public-link'),status=document.getElementById('copy-status');try{await navigator.clipboard.writeText(input.value);status.textContent='คัดลอกแล้ว / Link copied'}catch{input.focus();input.select();status.textContent='เลือกลิงก์ไว้แล้ว กรุณาคัดลอก / Link selected. Please copy it.'}});

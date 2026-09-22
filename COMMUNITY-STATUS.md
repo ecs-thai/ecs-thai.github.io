@@ -44,3 +44,12 @@ Staging Worker: ecs-community-staging. Separate D1 and private administrator cre
 Deploy from community/cloudflare using Wrangler. ADMIN_TOKEN is a Worker secret; production copy lives outside Git at ~/ecs-community-private/admin-token. All post writes require a valid owner link. Moderation requires the administrator secret. Public rendering uses text nodes, not submitted HTML. Public links are restricted to HTTP(S). No third-party trackers are added. Member links are bearer credentials: keep private, rotate by creating a replacement, and revoke if exposed.
 
 Back up D1 with wrangler d1 export ecs-community --remote --output PRIVATE_FILE, outside Git. Public listing currently returns up to 500 posts; add pagination before exceeding that volume. No R2 or paid mail service is required by this release.
+
+## การแชร์และข้อเสนอหน้ากิจกรรม (22 กันยายน 2026)
+
+- เพิ่มหน้าประกาศเฉพาะผ่าน /p/ID ของบริการ Community พร้อมชื่อเรื่องและคำอธิบาย Open Graph จากเซิร์ฟเวอร์
+- โอกาสวิจัย แล็บ และกิจกรรมมีปุ่ม LinkedIn, Facebook และคัดลอกลิงก์ ปุ่มเปิดหน้าจอแชร์ให้ผู้ใช้ยืนยันเอง ไม่มีการโพสต์อัตโนมัติ
+- หน้าสาธารณะไม่แสดงประกาศรอตรวจรับหรือถูกซ่อน ลิงก์แชร์ไม่มีรหัสสมาชิก
+- รุ่นนี้ยังไม่มีภาพปกประกาศ ตัวอย่างลิงก์ขึ้นกับการประมวลผลและแคชของแต่ละแพลตฟอร์ม
+- แนวทางถัดไปที่ผู้ใช้เสนอ: หน้ากิจกรรม seminar, workshop, conference และอื่น ๆ แยกกิจกรรมที่จะจัดกับสรุปกิจกรรมที่ผ่านมา มีภาพปก อัลบั้ม และสรุปงาน แชร์หน้าเดียวไปโซเชียล
+- อัลบั้มและอัปโหลดภาพกิจกรรมยังไม่ได้ทำ ต้องรับรูปจริงและสิทธิ์เผยแพร่ก่อนลงภาพจริง ไม่ใช้ภาพสมมติแทนกิจกรรมจริง

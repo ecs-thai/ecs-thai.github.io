@@ -1,3 +1,4 @@
+import {renderPost} from './share.mjs';
 const q=(e,s,...a)=>e.DB.prepare(s).bind(...a);
 const now=()=>Math.floor(Date.now()/1000);
 const fail=(error,status=400)=>{throw Object.assign(new Error(error),{status})};
@@ -25,6 +26,14 @@ export default {async fetch(req,env){
  if(req.headers.get('Origin')===env.ORIGIN)headers['Access-Control-Allow-Origin']=env.ORIGIN;
  const reply=(data,status=200)=>Response.json(data,{status,headers});
  try{
+  if(req.method==='GET'&&path.startsWith('/p/')){
+   const id=path.slice(3);
+   const row=await q(env,"SELECT * FROM posts WHERE id=? AND status IN ('approved','closed')",id).first();
+   if(!row)return new Response('ประกาศนี้ไม่พร้อมเผยแพร่ / Post unavailable',{status:404,headers:{...headers,'Content-Type':'text/plain; charset=utf-8','X-Robots-Tag':'noindex'}});
+   const p=publicPost(row);p.archived=row.status==='closed'||expired(p);
+   const canonical=new URL(req.url).origin+'/p/'+encodeURIComponent(row.id);
+   return new Response(renderPost(p,canonical,env.SITE),{headers:{...headers,'Content-Type':'text/html; charset=utf-8','Content-Security-Policy':"default-src 'none'; style-src https://ecs-thai.github.io; script-src https://ecs-thai.github.io; base-uri 'none'; frame-ancestors 'none'; form-action 'none'"}});
+  }
   if(req.method==='GET'&&path==='/health'){await q(env,'SELECT count(*) FROM posts').first();return reply({status:'ok'})}
   if(req.method==='GET'&&path==='/posts'){
    const rows=(await q(env,"SELECT * FROM posts WHERE status IN ('approved','closed') ORDER BY updated DESC LIMIT 500").all()).results;
